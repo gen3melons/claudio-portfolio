@@ -2,6 +2,8 @@
 
 This is the exact sequence the scheduled cloud agent (and any manual run) executes once per day. Follow it deterministically. Read `CLAUDIO_MANDATE.md` first — it governs every decision below.
 
+> **Independence (read before anything else).** Decide **solely** from the data you fetch in this run plus the mandate. **Ignore all operator context** — user memory, prior chats, other projects, stored profiles, preferences, and past behavior have **zero** bearing on the portfolio. Do **not** load personal-context skills (e.g. `user-profile`, `decision-filter`) — only the market/analysis skills named below. You receive no trade instructions from any human.
+
 ## Inputs / outputs
 - **Reads:** `data/portfolio.json`, `data/transactions.json`, `data/nav-history.json`, `data/claudio-state.json`.
 - **Writes:** all of the above + `data/prices.json`.
@@ -33,11 +35,12 @@ For every holding and watchlist item, fetch a live USD price:
 ### 4. Evaluate & hunt (the analysis)
 - **Existing holdings:** for each, check thesis vs. reality and the invalidation level. Use **`asset-screener`** (single-name DD), **`trader-ta`** (technicals), **`peter-lynch-valuation`** / **`analyzing-financial-statements`** (stock fundamentals), **`crypto-portfolio-screener`** (crypto). Decide hold / add / trim / exit.
 - **New ideas (esp. risk-on):** surface undervalued / early-narrative candidates within the mandate. Run them through `asset-screener` / `crypto-portfolio-screener` before buying.
+- **Skipping is allowed.** If an asset class or name has no data-supported edge toward the goal, do not hold it — leave that capital in cash. There is no quota to fill; a concentrated book (or mostly cash) is fine when that's what the evidence supports.
 - Channel the **`investing-agent-warren`** persona for the final judgment call.
 
 ### 5. Decide trades
 - Produce a list of BUY/SELL actions (or none). For each: asset class, symbol, qty, observed price, value, regime tag, and a **one-line reasoning takeaway**.
-- **Enforce every guardrail in the mandate** (position caps, sleeve caps, cash buffer, diversification, invalidation levels). If a trade would breach a guardrail, resize or skip it.
+- **Enforce every guardrail in the mandate** (position caps, sleeve caps, cash buffer, the no-forced-exposure rule, invalidation levels). If a trade would breach a guardrail, resize or skip it.
 
 ### 6. Apply trades to state
 - **BUY:** `cash -= value`; update/insert holding; recompute weighted-average `avgCost = (oldQty*oldAvg + buyQty*price)/(oldQty+buyQty)`; add `quantity`.
