@@ -1,15 +1,22 @@
 {
-  "asOf": "2026-06-14T14:00:00Z",
-  "fx": { "EURUSD": 1.1565 },
+  "asOf": "2026-06-14T20:00:00Z",
+  "fx": { "EURUSD": 1.1537 },
   "marks": {
-    "ticker:SPY": 741.75,
+    "ticker:SPY":  741.75,
     "ticker:MSFT": 390.74,
     "ticker:GOOGL": 359.68,
-    "ticker:UNH": 408.52,
-    "ticker:TLT": 85.77,
-    "ticker:GLD": 386.54,
-    "coingecko:bitcoin": 64307,
-    "coingecko:ethereum": 1666.39,
-    "coingecko:solana": 68.08
+    "ticker:UNH":  408.52,
+    "ticker:TLT":  85.77,
+    "ticker:GLD":  386.54,
+    "ticker:NVDA": 205.19,
+    "ticker:BRK-B": 489.25,
+    "ticker:COST": 982.35,
+    "ticker:IBIT": 36.04,
+    "ticker:SHY":  82.07,
+    "coingecko:bitcoin":    64282,
+    "coingecko:ethereum":   1665.43,
+    "coingecko:solana":     67.70,
+    "coingecko:chainlink":  7.86,
+    "coingecko:ondo-finance": 0.349087
   }
 }
