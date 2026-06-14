@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Claudio — Autonomous Portfolio</title>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #090b0f;
+    --surface: #0f1117;
+    --surface2: #161b24;
+    --surface3: #1c2333;
+    --border: #1e2d40;
+    --border2: #253347;
+    --text: #e2e8f0;
+    --text2: #8899b0;
+    --text3: #4a5568;
+    --accent: #3b82f6;
+    --green: #10b981;
+    --green2: #065f46;
+    --red: #ef4444;
+    --red2: #7f1d1d;
+    --yellow: #f59e0b;
+    --purple: #8b5cf6;
+    --cyan: #06b6d4;
+    --gray: #6b7280;
+  }
+  body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; min-height: 100vh; }
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
+  .live-dot { width:8px; height:8px; border-radius:50%; background:var(--green); animation: pulse 2s infinite; display:inline-block; }
+  .skeleton { background: linear-gradient(90deg, var(--surface2) 25%, var(--surface3) 50%, var(--surface2) 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite; border-radius: 6px; }
+  @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+  .tab-active { background: var(--accent); color: #fff; }
+  .tab-inactive { background: var(--surface2); color: var(--text2); }
+  .tab-inactive:hover { background: var(--surface3); color: var(--text); }
+  .badge { display:inline-flex; align-items:center; padding:2px 8px; border-radius:12px; font-size:11px; font-weight:600; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { text-align: left; padding: 10px 12px; }
+  tbody tr { border-top: 1px solid var(--border); }
+  tbody tr:hover { background: var(--surface2); }
+  @media (max-width:760px){ .hide-sm { display:none !important; } .grid-stats { grid-template-columns:1fr 1fr !important; } .two-col { grid-template-columns:1fr !important; } }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel">
+const { useState, useEffect, useRef, useCallback } = React;
+
+// ─── ASSET CLASS META ─────────────────────────────────────────────────────────
+const CLASS_META = {
+  stock:     { label:'Stocks',      color:'#3b82f6' },
+  crypto:    { label:'Crypto',      color:'#f59e0b' },
+  bond:      { label:'Bonds',       color:'#10b981' },
+  commodity: { label:'Commodities', color:'#8b5cf6' },
+  cash:      { label:'Cash',        color:'#6b7280' },
+};
+const CLASS_ORDER = ['stock','crypto','bond','commodity','cash'];
+
+// ─── UTILITIES ────────────────────────────────────────────────────────────────
+const fmt = {
+  usd: v => v == null ? '—' : (v<0?'-':'') + '$' + Math.abs(v).toLocaleString('en',{maximumFractionDigits:0}),
+  usd2: v => v == null ? '—' : (v<0?'-':'') + '$' + Math.abs(v).toLocaleString('en',{minimumFractionDigits:2,maximumFractionDigits:2}),
+  pct: v => v == null ? '—' : `${v>=0?'+':''}${v.toFixed(2)}%`,
+  price: v => v == null ? '—' : v < 1 ? '$'+v.toFixed(4) : v < 1000 ? '$'+v.toFixed(2) : '$'+v.toLocaleString('en',{minimumFractionDigits:2,maximumFractionDigits:2}),
+  qty: v => v == null ? '—' : (v >= 1 ? v.toLocaleString('en',{maximumFractionDigits:4}) : v.toLocaleString('en',{maximumFractionDigits:8})),
+  date: s => { if(!s) return '—'; const d = new Date(s); return d.toLocaleDateString('en',{month:'short',day:'numeric',year:'numeric'}); },
+  datetime: s => { if(!s) return '—'; const d = new Date(s); return d.toLocaleString('en',{month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'}); },
+};
+const pctColor = v => v == null ? 'var(--text2)' : v >= 0 ? 'var(--green)' : 'var(--red)';
+
+// ─── DATA LAYER ───────────────────────────────────────────────────────────────
+async function loadJSON(path) {
+  const r = await fetch(`${path}?t=${Date.now()}`, { cache:'no-store' });
+  if (!r.ok) throw new Error(`${path}: HTTP ${r.status}`);
+  return r.json();
+}
+
+// Best-effort live crypto refresh (overrides daily marks for coingecko:* sources)
+async function liveCryptoMarks(holdings) {
+  const ids = holdings
+    .filter(h => (h.priceSource||'').startsWith('coingecko:'))
+    .map(h => h.priceSource.split(':')[1]);
+  if (!ids.length) return {};
+  try {
+    const r = await fetch(`https://api.coingecko.com/api/v3/simple/price?ids=${ids.join(',')}&vs_currencies=usd`);
+    if (!r.ok) return {};
+    const d = await r.json();
+    const out = {};
+    ids.forEach(id => { if (d[id]?.usd != null) out[`coingecko:${id}`] = d[id].usd; });
+    return out;
+  } catch { return {}; }
+}
+
+// ─── SMALL COMPONENTS ─────────────────────────────────────────────────────────
+function StatCard({ label, value, sub, color, icon }) {
+  return (
+    <div style={{background:'var(--surface)',border:'1px solid var(--border)',borderRadius:12,padding:'16px 18px',position:'relative',overflow:'hidden'}}>
+      <div style={{position:'absolute',top:0,right:0,width:54,height:54,background:(color||'var(--accent)')+'18',borderRadius:'0 12px 0 54px'}}/>
+      <div style={{display:'flex',alignItems:'center',gap:6,color:'var(--text2)',fontSize:11,fontWeight:600,textTransform:'uppercase',letterSpacing:'0.5px'}}>
+        {icon && <span>{icon}</span>}{label}
+      </div>
+      <div className="mono" style={{fontSize:26,fontWeight:800,color:color||'var(--text)',lineHeight:1.1,marginTop:8}}>{value}</div>
+      {sub && <div style={{fontSize:12,color:'var(--text2)',marginTop:4}}>{sub}</div>}
+    </div>
+  );
+}
+
+function RegimeBadge({ regime }) {
+  const map = {
+    'risk-on':  { c:'var(--green)',  bg:'var(--green2)', t:'🟢 Risk-On' },
+    'neutral':  { c:'var(--yellow)', bg:'#78350f',       t:'🟡 Neutral' },
+    'risk-off': { c:'var(--red)',    bg:'var(--red2)',   t:'🔴 Risk-Off' },
+  };
+  const m = map[regime] || { c:'var(--text2)', bg:'var(--surface3)', t:'⚪ '+(regime||'unset') };
+  return <span className="badge" style={{background:m.bg,color:m.c,fontSize:12,padding:'4px 12px'}}>{m.t}</span>;
+}
+
+function NavChart({ history }) {
+  const ref = useRef(null); const chartRef = useRef(null);
+  useEffect(() => {
+    if (!ref.current || !history || !history.length) return;
+    if (chartRef.current) chartRef.current.destroy();
+    const ctx = ref.current.getContext('2d');
+    const labels = history.map(h => h.date);
+    const data = history.map(h => h.nav);
+    const start = history[0]?.nav ?? 0;
+    chartRef.current = new Chart(ctx, {
+      type:'line',
+      data:{ labels, datasets:[
+        { label:'NAV', data, borderColor:'#3b82f6', borderWidth:2, pointRadius:0, tension:0.25, fill:true,
+          backgroundColor: c => { const g=c.chart.ctx.createLinearGradient(0,0,0,260); g.addColorStop(0,'#3b82f640'); g.addColorStop(1,'#3b82f600'); return g; } },
+        { label:'Start', data: labels.map(()=>start), borderColor:'#4a5568', borderWidth:1, borderDash:[5,5], pointRadius:0, fill:false },
+      ]},
+      options:{ responsive:true, maintainAspectRatio:false, interaction:{mode:'index',intersect:false},
+        plugins:{ legend:{display:false}, tooltip:{ callbacks:{ label: c => ` ${fmt.usd2(c.parsed.y)}` } } },
+        scales:{
+          x:{ grid:{color:'#1e2d40'}, ticks:{color:'#8899b0',maxTicksLimit:8,font:{size:10}} },
+          y:{ grid:{color:'#1e2d40'}, ticks:{color:'#8899b0',font:{size:10},callback:v=>'$'+(v/1000)+'k'} },
+        } }
+    });
+    return () => { if(chartRef.current) chartRef.current.destroy(); };
+  }, [history]);
+  return <div style={{height:260}}><canvas ref={ref}/></div>;
+}
+
+function AllocPie({ byClass }) {
+  const ref = useRef(null); const chartRef = useRef(null);
+  useEffect(() => {
+    if (!ref.current) return;
+    if (chartRef.current) chartRef.current.destroy();
+    const entries = CLASS_ORDER.map(k=>[k, byClass[k]||0]).filter(([,v])=>v>0);
+    const ctx = ref.current.getContext('2d');
+    chartRef.current = new Chart(ctx, {
+      type:'doughnut',
+      data:{ labels: entries.map(([k])=>CLASS_META[k].label),
+        datasets:[{ data: entries.map(([,v])=>v), backgroundColor: entries.map(([k])=>CLASS_META[k].color),
+          borderColor:'#0f1117', borderWidth:2 }] },
+      options:{ responsive:true, maintainAspectRatio:false, cutout:'62%',
+        plugins:{ legend:{display:false},
+          tooltip:{ callbacks:{ label: c => { const tot=c.dataset.data.reduce((a,b)=>a+b,0); return ` ${c.label}: ${fmt.usd(c.parsed)} (${(c.parsed/tot*100).toFixed(1)}%)`; } } } } }
+    });
+    return () => { if(chartRef.current) chartRef.current.destroy(); };
+  }, [JSON.stringify(byClass)]);
+  return <div style={{height:220,position:'relative'}}><canvas ref={ref}/></div>;
+}
+
+// ─── MAIN APP ─────────────────────────────────────────────────────────────────
+function App() {
+  const [tab, setTab] = useState('overview');
+  const [portfolio, setPortfolio] = useState(null);
+  const [transactions, setTransactions] = useState([]);
+  const [history, setHistory] = useState([]);
+  const [prices, setPrices] = useState({ marks:{} });
+  const [cstate, setCstate] = useState(null);
+  const [liveMarks, setLiveMarks] = useState({});
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [updated, setUpdated] = useState(null);
+  const [txFilter, setTxFilter] = useState('all');
+
+  const load = useCallback(async () => {
+    try {
+      setError(null);
+      const [pf, tx, hist, pr, cs] = await Promise.all([
+        loadJSON('./data/portfolio.json'),
+        loadJSON('./data/transactions.json').catch(()=>[]),
+        loadJSON('./data/nav-history.json').catch(()=>[]),
+        loadJSON('./data/prices.json').catch(()=>({marks:{}})),
+        loadJSON('./data/claudio-state.json').catch(()=>null),
+      ]);
+      setPortfolio(pf); setTransactions(tx); setHistory(hist); setPrices(pr); setCstate(cs);
+      setLoading(false); setUpdated(new Date());
+      const lm = await liveCryptoMarks(pf.holdings||[]);
+      setLiveMarks(lm);
+    } catch(e) { setError(e.message); setLoading(false); }
+  }, []);
+
+  useEffect(() => { load(); const iv = setInterval(load, 120000); return () => clearInterval(iv); }, [load]);
+
+  if (loading) return <div style={{maxWidth:1280,margin:'0 auto',padding:40}}><div className="skeleton" style={{height:40,width:320,marginBottom:20}}/><div className="skeleton" style={{height:160,width:'100%'}}/></div>;
+
+  const markOf = (h) => liveMarks[h.priceSource] ?? prices.marks?.[h.priceSource] ?? h.avgCost ?? 0;
+  const holdings = (portfolio.holdings||[]).map(h => {
+    const price = markOf(h);
+    const value = price * h.quantity;
+    const cost = h.avgCost * h.quantity;
+    const pnl = value - cost;
+    const pnlPct = cost > 0 ? (pnl/cost*100) : 0;
+    return { ...h, price, value, cost, pnl, pnlPct };
+  });
+  const investedValue = holdings.reduce((a,h)=>a+h.value,0);
+  const cash = portfolio.cash || 0;
+  const nav = cash + investedValue;
+  const start = portfolio.startingCapital || 100000;
+  const goal = portfolio.goal || 500000;
+  const totalPnl = nav - start;
+  const totalPnlPct = start ? (totalPnl/start*100) : 0;
+  const goalPct = Math.min(100, nav/goal*100);
+  const totalCost = holdings.reduce((a,h)=>a+h.cost,0);
+
+  const byClass = { stock:0,crypto:0,bond:0,commodity:0,cash };
+  holdings.forEach(h => { byClass[h.assetClass] = (byClass[h.assetClass]||0) + h.value; });
+
+  const sortedHoldings = [...holdings].sort((a,b)=>b.value-a.value);
+  const sortedTx = [...transactions].sort((a,b)=> new Date(b.date) - new Date(a.date));
+  const filteredTx = sortedTx.filter(t => txFilter==='all' || t.assetClass===txFilter || t.action?.toLowerCase()===txFilter);
+
+  return (
+    <div style={{maxWidth:1280,margin:'0 auto',padding:'18px 20px 60px'}}>
+      {/* HEADER */}
+      <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',flexWrap:'wrap',gap:12,marginBottom:20}}>
+        <div>
+          <h1 style={{fontSize:22,fontWeight:800,background:'linear-gradient(135deg,#3b82f6,#8b5cf6)',WebkitBackgroundClip:'text',WebkitTextFillColor:'transparent'}}>
+            ◆ Claudio — Autonomous Portfolio
+          </h1>
+          <div style={{fontSize:12,color:'var(--text2)',marginTop:2}}>
+            AI-managed paper portfolio · Buffett × Dalio × narrative rotation · Goal {fmt.usd(goal)}
+          </div>
+        </div>
+        <div style={{display:'flex',alignItems:'center',gap:12,flexWrap:'wrap'}}>
+          {cstate && <RegimeBadge regime={cstate.regime}/>}
+          {updated && <div style={{display:'flex',alignItems:'center',gap:6,fontSize:12,color:'var(--text2)'}}><span className="live-dot"/>Updated {updated.toLocaleTimeString()}</div>}
+          <button onClick={load} style={{background:'var(--surface2)',border:'1px solid var(--border)',color:'var(--text)',padding:'8px 14px',borderRadius:8,cursor:'pointer',fontSize:13,fontWeight:500}}>⟳ Refresh</button>
+        </div>
+      </div>
+
+      {error && <div style={{background:'var(--red2)',border:'1px solid var(--red)',borderRadius:8,padding:'10px 14px',marginBottom:16,fontSize:13,color:'var(--red)'}}>⚠ {error}</div>}
+
+      {/* TABS */}
+      <div style={{display:'flex',gap:8,marginBottom:20}}>
+        {[['overview','Overview'],['transactions',`Transactions (${transactions.length})`]].map(([id,label])=>(
+          <button key={id} onClick={()=>setTab(id)} className={tab===id?'tab-active':'tab-inactive'}
+            style={{padding:'8px 18px',borderRadius:8,border:'none',cursor:'pointer',fontSize:13,fontWeight:600}}>{label}</button>
+        ))}
+      </div>
+
+      {tab==='overview' && <>
+        {/* HERO NAV + GOAL */}
+        <div style={{background:'var(--surface)',border:'1px solid var(--border)',borderRadius:14,padding:'22px 24px',marginBottom:16}}>
+          <div style={{display:'flex',alignItems:'flex-end',justifyContent:'space-between',flexWrap:'wrap',gap:16}}>
+            <div>
+              <div style={{fontSize:12,color:'var(--text2)',fontWeight:600,textTransform:'uppercase',letterSpacing:'0.5px'}}>Portfolio Value (NAV)</div>
+              <div className="mono" style={{fontSize:44,fontWeight:800,lineHeight:1.05,marginTop:6}}>{fmt.usd2(nav)}</div>
+              <div style={{fontSize:14,marginTop:6,color:pctColor(totalPnl),fontWeight:600}} className="mono">
+                {fmt.usd2(totalPnl)} ({fmt.pct(totalPnlPct)}) since inception
+              </div>
+            </div>
+            <div style={{minWidth:280,flex:1,maxWidth:520}}>
+              <div style={{display:'flex',justifyContent:'space-between',fontSize:12,color:'var(--text2)',marginBottom:6}}>
+                <span>Progress to goal</span><span className="mono">{goalPct.toFixed(1)}% · {fmt.usd(nav)} / {fmt.usd(goal)}</span>
+              </div>
+              <div style={{height:14,background:'var(--surface3)',borderRadius:8,overflow:'hidden'}}>
+                <div style={{width:`${goalPct}%`,height:'100%',background:'linear-gradient(90deg,#3b82f6,#10b981)',borderRadius:8,transition:'width 0.8s'}}/>
+              </div>
+              <div style={{fontSize:11,color:'var(--text3)',marginTop:6}}>Inception {fmt.date(portfolio.inceptionDate)} · Start {fmt.usd(start)}</div>
+            </div>
+          </div>
+        </div>
+
+        {/* STAT CARDS */}
+        <div className="grid-stats" style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:12,marginBottom:20}}>
+          <StatCard icon="💰" label="Cash" color="var(--gray)" value={fmt.usd(cash)} sub={`${(cash/nav*100).toFixed(1)}% of NAV`}/>
+          <StatCard icon="📈" label="Invested" color="var(--accent)" value={fmt.usd(investedValue)} sub={`${holdings.length} positions`}/>
+          <StatCard icon="🎯" label="Unrealized P&L" color={pctColor(nav-start>=0?1:-1)} value={fmt.pct(totalCost>0?(investedValue-totalCost)/totalCost*100:0)} sub={fmt.usd2(investedValue-totalCost)}/>
+          <StatCard icon="🧭" label="Regime" color="var(--yellow)" value={(cstate?.regime||'unset').replace('-',' ')} sub={fmt.datetime(cstate?.lastUpdated)}/>
+        </div>
+
+        {/* CHARTS */}
+        <div className="two-col" style={{display:'grid',gridTemplateColumns:'1.6fr 1fr',gap:16,marginBottom:20}}>
+          <div style={{background:'var(--surface)',border:'1px solid var(--border)',borderRadius:12,padding:18}}>
+            <div style={{fontSize:13,fontWeight:600,marginBottom:12}}>NAV History</div>
+            {history.length>1 ? <NavChart history={history}/> :
+              <div style={{height:260,display:'flex',alignItems:'center',justifyContent:'center',color:'var(--text2)',fontSize:13}}>Building history — one snapshot per daily review.</div>}
+          </div>
+          <div style={{background:'var(--surface)',border:'1px solid var(--border)',borderRadius:12,padding:18}}>
+            <div style={{fontSize:13,fontWeight:600,marginBottom:12}}>Allocation by Asset Class</div>
+            <AllocPie byClass={byClass}/>
+            <div style={{display:'flex',flexDirection:'column',gap:6,marginTop:14}}>
+              {CLASS_ORDER.map(k=>{ const v=byClass[k]||0; if(v<=0) return null; return (
+                <div key={k} style={{display:'flex',alignItems:'center',justifyContent:'space-between',fontSize:12}}>
+                  <span style={{display:'flex',alignItems:'center',gap:8}}><span style={{width:10,height:10,borderRadius:3,background:CLASS_META[k].color}}/>{CLASS_META[k].label}</span>
+                  <span className="mono" style={{color:'var(--text2)'}}>{(v/nav*100).toFixed(1)}% · {fmt.usd(v)}</span>
+                </div>); })}
+            </div>
+          </div>
+        </div>
+
+        {/* CLAUDIO'S READ */}
+        {cstate?.regimeNotes && (
+          <div style={{background:'var(--surface)',border:'1px solid var(--border)',borderRadius:12,padding:'14px 18px',marginBottom:20,display:'flex',gap:12}}>
+            <span style={{fontSize:20}}>🤖</span>
+            <div>
+              <div style={{fontSize:12,fontWeight:600,color:'var(--text2)',marginBottom:3}}>Claudio's current read</div>
+              <div style={{fontSize:13,color:'var(--text)',lineHeight:1.5}}>{cstate.regimeNotes}</div>
+              {cstate.watchlist?.length>0 && <div style={{fontSize:12,color:'var(--text2)',marginTop:8}}>Watchlist: {cstate.watchlist.map(w=>typeof w==='string'?w:w.symbol).join(' · ')}</div>}
+            </div>
+          </div>
+        )}
+
+        {/* HOLDINGS TABLE */}
+        <div style={{background:'var(--surface)',border:'1px solid var(--border)',borderRadius:12,overflow:'hidden'}}>
+          <div style={{padding:'14px 18px',fontSize:13,fontWeight:600,borderBottom:'1px solid var(--border)'}}>Holdings</div>
+          {sortedHoldings.length===0 ? (
+            <div style={{padding:30,textAlign:'center',color:'var(--text2)',fontSize:13}}>100% cash — awaiting Claudio's first allocation.</div>
+          ) : (
+            <div style={{overflowX:'auto'}}>
+            <table style={{fontSize:13}}>
+              <thead><tr style={{color:'var(--text2)',fontSize:11,textTransform:'uppercase',letterSpacing:'0.5px'}}>
+                <th>Asset</th><th className="hide-sm">Class</th><th style={{textAlign:'right'}}>Amount</th>
+                <th style={{textAlign:'right'}}>Avg Buy-In</th><th style={{textAlign:'right'}}>Price</th>
+                <th style={{textAlign:'right'}}>Value</th><th style={{textAlign:'right'}} className="hide-sm">Weight</th>
+                <th style={{textAlign:'right'}}>P&L</th>
+              </tr></thead>
+              <tbody>
+                {sortedHoldings.map(h=>(
+                  <tr key={h.symbol+h.assetClass}>
+                    <td><div style={{fontWeight:700}}>{h.symbol}</div><div style={{fontSize:11,color:'var(--text2)'}}>{h.name}</div></td>
+                    <td className="hide-sm"><span className="badge" style={{background:CLASS_META[h.assetClass]?.color+'22',color:CLASS_META[h.assetClass]?.color}}>{CLASS_META[h.assetClass]?.label||h.assetClass}</span></td>
+                    <td className="mono" style={{textAlign:'right'}}>{fmt.qty(h.quantity)}</td>
+                    <td className="mono" style={{textAlign:'right',color:'var(--text2)'}}>{fmt.price(h.avgCost)}</td>
+                    <td className="mono" style={{textAlign:'right'}}>{fmt.price(h.price)}</td>
+                    <td className="mono" style={{textAlign:'right',fontWeight:600}}>{fmt.usd(h.value)}</td>
+                    <td className="mono hide-sm" style={{textAlign:'right',color:'var(--text2)'}}>{(h.value/nav*100).toFixed(1)}%</td>
+                    <td className="mono" style={{textAlign:'right',color:pctColor(h.pnl),fontWeight:600}}>{fmt.pct(h.pnlPct)}<div style={{fontSize:11,fontWeight:400}}>{fmt.usd(h.pnl)}</div></td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            </div>
+          )}
+        </div>
+      </>}
+
+      {tab==='transactions' && <>
+        <div style={{display:'flex',gap:6,marginBottom:14,flexWrap:'wrap'}}>
+          {[['all','All'],['buy','Buys'],['sell','Sells'],...CLASS_ORDER.filter(c=>c!=='cash').map(c=>[c,CLASS_META[c].label])].map(([id,label])=>(
+            <button key={id} onClick={()=>setTxFilter(id)} className={txFilter===id?'tab-active':'tab-inactive'}
+              style={{padding:'5px 12px',borderRadius:16,border:'none',cursor:'pointer',fontSize:12,fontWeight:600}}>{label}</button>
+          ))}
+        </div>
+        <div style={{background:'var(--surface)',border:'1px solid var(--border)',borderRadius:12,overflow:'hidden'}}>
+          {filteredTx.length===0 ? (
+            <div style={{padding:30,textAlign:'center',color:'var(--text2)',fontSize:13}}>No transactions yet. Claudio's trades will appear here with the reasoning behind each one.</div>
+          ) : filteredTx.map((t,i)=>{
+            const buy = t.action?.toUpperCase()==='BUY';
+            return (
+              <div key={t.id||i} style={{padding:'14px 18px',borderTop:i?'1px solid var(--border)':'none',display:'flex',gap:14,alignItems:'flex-start'}}>
+                <span className="badge" style={{background:buy?'var(--green2)':'var(--red2)',color:buy?'var(--green)':'var(--red)',marginTop:2,minWidth:48,justifyContent:'center'}}>{buy?'BUY':'SELL'}</span>
+                <div style={{flex:1,minWidth:0}}>
+                  <div style={{display:'flex',gap:8,alignItems:'baseline',flexWrap:'wrap'}}>
+                    <span style={{fontWeight:700}}>{t.symbol}</span>
+                    <span className="mono" style={{fontSize:13,color:'var(--text2)'}}>{fmt.qty(t.quantity)} @ {fmt.price(t.price)}</span>
+                    <span className="mono" style={{fontSize:13,fontWeight:600}}>= {fmt.usd(t.value)}</span>
+                    {t.assetClass && <span className="badge" style={{background:CLASS_META[t.assetClass]?.color+'22',color:CLASS_META[t.assetClass]?.color}}>{CLASS_META[t.assetClass]?.label}</span>}
+                  </div>
+                  {t.reasoning && <div style={{fontSize:13,color:'var(--text)',marginTop:6,lineHeight:1.5}}>{t.reasoning}</div>}
+                  <div style={{fontSize:11,color:'var(--text3)',marginTop:6,display:'flex',gap:10,flexWrap:'wrap'}}>
+                    <span>{fmt.datetime(t.date)}</span>{t.regime && <span>· regime: {t.regime}</span>}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </>}
+
+      <footer style={{borderTop:'1px solid var(--border)',paddingTop:16,marginTop:24,display:'flex',justifyContent:'space-between',flexWrap:'wrap',gap:8,fontSize:11,color:'var(--text3)'}}>
+        <span>Managed by Claudio · marks from data/prices.json + live CoinGecko · auto-refresh 2 min</span>
+        <span>⚠ Simulated paper portfolio. Not financial advice.</span>
+      </footer>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script>
+</body>
+</html>

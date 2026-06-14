@@ -1,0 +1,17 @@
+{
+  "lastUpdated": "2026-06-14T20:00:00Z",
+  "regime": "neutral",
+  "regimeNotes": "Constructive-but-cautious. Fed on hold at 4.25-4.50% with cuts toward 3.0-3.25% expected by year-end (tailwind for duration and equities; S&P target ~7,400). Crypto in an Extreme-Fear drawdown (F&G 18, BTC dominance 56.6%, total cap ~$2.28T). Posture: defensive barbell (gold + long bonds + 23% cash) alongside quality equity and a BTC-led crypto sleeve accumulated into the fear. Dry powder reserved to add on further weakness.",
+  "watchlist": ["NVDA", "BRK-B", "COST", "IBIT", "LINK", "ONDO", "SHY"],
+  "theses": {
+    "SPY":   { "thesis": "Core US beta into an easing cycle.", "invalidation": "Sustained break below ~$660 or a hawkish Fed re-pricing." },
+    "MSFT":  { "thesis": "AI/cloud quality compounder, strong FCF.", "invalidation": "Cloud growth deceleration or AI capex with no ROI; < ~$340." },
+    "GOOGL": { "thesis": "Quality cash machine at fair value with AI optionality.", "invalidation": "Search share erosion to AI rivals; < ~$310." },
+    "UNH":   { "thesis": "Contrarian defensive value, durable earnings.", "invalidation": "Further regulatory/medical-cost shock; < ~$360." },
+    "TLT":   { "thesis": "Long duration to harvest rate cuts; ballast.", "invalidation": "10Y breaks decisively above ~5% (cuts cancelled)." },
+    "GLD":   { "thesis": "Debasement + tail-risk hedge, uncorrelated.", "invalidation": "Real yields spike with strong USD; < ~$350." },
+    "BTC":   { "thesis": "Accumulate the strongest crypto into Extreme Fear.", "invalidation": "Weekly close below ~$52k (trend break)." },
+    "ETH":   { "thesis": "Discounted L1 leader; rotation optionality.", "invalidation": "Loses ground to rivals; < ~$1,300." },
+    "SOL":   { "thesis": "Small high-beta narrative satellite.", "invalidation": "Break below ~$52; network/sentiment deterioration." }
+  }
+}

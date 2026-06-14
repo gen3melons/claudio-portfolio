@@ -1,0 +1,21 @@
+{
+  "baseCurrency": "USD",
+  "cash": 23000.12,
+  "startingCapital": 100000,
+  "goal": 500000,
+  "inceptionDate": "2026-06-14",
+  "monthlyContributionUSD": 0,
+  "manager": "Claudio",
+  "lastReview": "2026-06-14",
+  "holdings": [
+    { "assetClass": "stock", "symbol": "SPY", "name": "SPDR S&P 500 ETF", "priceSource": "ticker:SPY", "quantity": 17.5254, "avgCost": 741.75 },
+    { "assetClass": "stock", "symbol": "MSFT", "name": "Microsoft", "priceSource": "ticker:MSFT", "quantity": 17.9158, "avgCost": 390.74 },
+    { "assetClass": "stock", "symbol": "GOOGL", "name": "Alphabet", "priceSource": "ticker:GOOGL", "quantity": 19.4617, "avgCost": 359.68 },
+    { "assetClass": "stock", "symbol": "UNH", "name": "UnitedHealth Group", "priceSource": "ticker:UNH", "quantity": 14.6872, "avgCost": 408.52 },
+    { "assetClass": "bond", "symbol": "TLT", "name": "iShares 20+ Yr Treasury", "priceSource": "ticker:TLT", "quantity": 174.8863, "avgCost": 85.77 },
+    { "assetClass": "commodity", "symbol": "GLD", "name": "SPDR Gold Shares", "priceSource": "ticker:GLD", "quantity": 31.0445, "avgCost": 386.54 },
+    { "assetClass": "crypto", "symbol": "BTC", "name": "Bitcoin", "priceSource": "coingecko:bitcoin", "quantity": 0.171056, "avgCost": 64307 },
+    { "assetClass": "crypto", "symbol": "ETH", "name": "Ethereum", "priceSource": "coingecko:ethereum", "quantity": 2.398846, "avgCost": 1667.47 },
+    { "assetClass": "crypto", "symbol": "SOL", "name": "Solana", "priceSource": "coingecko:solana", "quantity": 29.4942, "avgCost": 67.81 }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "asOf": "2026-06-14T20:00:00Z",
+  "fx": { "EURUSD": 1.08 },
+  "marks": {
+    "ticker:SPY": 741.75,
+    "ticker:MSFT": 390.74,
+    "ticker:GOOGL": 359.68,
+    "ticker:UNH": 408.52,
+    "ticker:TLT": 85.77,
+    "ticker:GLD": 386.54,
+    "coingecko:bitcoin": 64307,
+    "coingecko:ethereum": 1667.47,
+    "coingecko:solana": 67.81
+  }
+}

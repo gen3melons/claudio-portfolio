@@ -1,0 +1,20 @@
+[
+  { "id": "20260614-01", "date": "2026-06-14T20:00:00Z", "action": "BUY", "assetClass": "stock", "symbol": "SPY", "quantity": 17.5254, "price": 741.75, "value": 13000.00, "regime": "neutral",
+    "reasoning": "Core US equity beta bought into weakness. Fed easing path (cuts toward 3.0-3.25% by year-end) + S&P target ~7,400 support broad index; accumulate while sentiment is fearful." },
+  { "id": "20260614-02", "date": "2026-06-14T20:00:00Z", "action": "BUY", "assetClass": "stock", "symbol": "MSFT", "quantity": 17.9158, "price": 390.74, "value": 7000.01, "regime": "neutral",
+    "reasoning": "Quality compounder with AI/cloud moat and strong free cash flow. Buffett-style: own a great business; weakness offers a better entry." },
+  { "id": "20260614-03", "date": "2026-06-14T20:00:00Z", "action": "BUY", "assetClass": "stock", "symbol": "GOOGL", "quantity": 19.4617, "price": 359.68, "value": 6999.98, "regime": "neutral",
+    "reasoning": "High-quality cash machine at a reasonable multiple; search + cloud + AI optionality. Margin of safety vs. peers." },
+  { "id": "20260614-04", "date": "2026-06-14T20:00:00Z", "action": "BUY", "assetClass": "stock", "symbol": "UNH", "quantity": 14.6872, "price": 408.52, "value": 5999.99, "regime": "neutral",
+    "reasoning": "Contrarian value in defensive healthcare after a deep drawdown; durable earnings diversify away from mega-cap tech." },
+  { "id": "20260614-05", "date": "2026-06-14T20:00:00Z", "action": "BUY", "assetClass": "bond", "symbol": "TLT", "quantity": 174.8863, "price": 85.77, "value": 15000.00, "regime": "neutral",
+    "reasoning": "Long-duration Treasuries to harvest the Fed easing cycle; portfolio ballast that rallies if growth disappoints (Dalio diversification)." },
+  { "id": "20260614-06", "date": "2026-06-14T20:00:00Z", "action": "BUY", "assetClass": "commodity", "symbol": "GLD", "quantity": 31.0445, "price": 386.54, "value": 11999.94, "regime": "neutral",
+    "reasoning": "Gold as a debasement and tail-risk hedge; uncorrelated diversifier that strengthens the all-weather balance." },
+  { "id": "20260614-07", "date": "2026-06-14T20:00:00Z", "action": "BUY", "assetClass": "crypto", "symbol": "BTC", "quantity": 0.171056, "price": 64307, "value": 11000.00, "regime": "neutral",
+    "reasoning": "Extreme Fear (F&G 18) with rising BTC dominance (56.6%) = accumulate the strongest crypto asset at a discount. Core of the crypto sleeve." },
+  { "id": "20260614-08", "date": "2026-06-14T20:00:00Z", "action": "BUY", "assetClass": "crypto", "symbol": "ETH", "quantity": 2.398846, "price": 1667.47, "value": 4000.00, "regime": "neutral",
+    "reasoning": "Smart-contract leader deeply discounted (ETH dominance only 8.8%); asymmetric upside if capital rotates back into alts." },
+  { "id": "20260614-09", "date": "2026-06-14T20:00:00Z", "action": "BUY", "assetClass": "crypto", "symbol": "SOL", "quantity": 29.4942, "price": 67.81, "value": 2000.00, "regime": "neutral",
+    "reasoning": "Small high-beta satellite for narrative upside; sized deliberately small given risk-off sentiment." }
+]
