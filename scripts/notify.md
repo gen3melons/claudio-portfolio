@@ -3,7 +3,7 @@
 Claudio sends one WhatsApp message **per transaction**. CallMeBot is a free personal WhatsApp relay.
 
 ## One-time setup (user does this once)
-1. Add the CallMeBot number **+34 644 84 71 89** to your phone contacts.
+1. Add the CallMeBot number **+34 621 34 34 03** to your phone contacts. (CallMeBot rotates this number periodically — if WhatsApp says it's invalid, check the latest at the docs link below.)
 2. From your WhatsApp, send the message: **`I allow callmebot to send me messages`** to that number.
 3. You'll receive a reply with your personal **API key** (e.g. `123456`).
 4. Note your phone in international format **without `+`** (e.g. `54911...` for Argentina, or your actual number).
