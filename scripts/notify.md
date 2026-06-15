@@ -39,9 +39,24 @@ curl -s -G "https://api.callmebot.com/whatsapp.php" \
 A success response contains "Message queued".
 
 ## Message template (ASCII only)
+
+Multi-line message, one per trade. Replace all `$` with nothing (just the number + USD) and all `%` with `pct`. Use `->` for arrows. Newlines are fine via `--data-urlencode`.
+
 ```
-Claudio <BUY|SELL> <qty> <SYMBOL> at <price> USD (<value> USD) - <reasoning> - NAV <nav> USD
+Trade executed:
+* <BUY|SELL> <qty> <SYMBOL> at <price> USD -> <value> USD deployed
+* Reasoning: <one-line reasoning>
+* New <SYMBOL>: <new_total_qty> <SYMBOL> at avg cost <avg_cost> USD
+
+Portfolio after trade:
+* NAV: <nav> USD (<+/->nav_change USD / <+/->nav_pct pct from yesterday <prev_nav> USD)
+* Cash: <cash> USD (<cash_pct> pct) - <cash_note>
+* Crypto sleeve: <sleeve_pct> pct of NAV (under <sleeve_limit> pct <regime>-cap)
+
+Next catalyst: <catalyst>
 ```
+
+For SELL: replace the "New <SYMBOL>" line with "Remaining <SYMBOL>: <qty> <SYMBOL> (fully exited)" or the remaining qty + realized P&L.
 
 ## Optional: daily no-trade digest
 If enabled, on days with no trades send one line:
