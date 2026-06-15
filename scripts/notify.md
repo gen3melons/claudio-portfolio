@@ -53,7 +53,9 @@ Portfolio after trade:
 * Cash: <cash> USD (<cash_pct> pct) - <cash_note>
 * Crypto sleeve: <sleeve_pct> pct of NAV (under <sleeve_limit> pct <regime>-cap)
 
-Next catalyst: <catalyst>
+Next catalysts:
+* <catalyst 1>
+* <catalyst 2 if any>
 ```
 
 For SELL: replace the "New <SYMBOL>" line with "Remaining <SYMBOL>: <qty> <SYMBOL> (fully exited)" or the remaining qty + realized P&L.
