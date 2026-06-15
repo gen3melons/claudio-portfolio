@@ -16,5 +16,7 @@
   { "id": "20260614-08", "date": "2026-06-14T20:00:00Z", "action": "BUY", "assetClass": "crypto", "symbol": "ETH", "quantity": 2.398846, "price": 1667.47, "value": 4000.00, "regime": "neutral",
     "reasoning": "Smart-contract leader deeply discounted (ETH dominance only 8.8%); asymmetric upside if capital rotates back into alts." },
   { "id": "20260614-09", "date": "2026-06-14T20:00:00Z", "action": "BUY", "assetClass": "crypto", "symbol": "SOL", "quantity": 29.4942, "price": 67.81, "value": 2000.00, "regime": "neutral",
-    "reasoning": "Small high-beta satellite for narrative upside; sized deliberately small given risk-off sentiment." }
+    "reasoning": "Small high-beta satellite for narrative upside; sized deliberately small given risk-off sentiment." },
+  { "id": "20260615-01", "date": "2026-06-15T10:00:00Z", "action": "BUY", "assetClass": "crypto", "symbol": "BTC", "quantity": 0.053303, "price": 65662, "value": 3500.00, "regime": "risk-on",
+    "reasoning": "Iran-US peace deal collapses oil prices and removes energy-CPI risk; regime upgraded to risk-on; add BTC in Extreme Fear (F&G 20) toward 15 pct position cap as core crypto sleeve leader." }
 ]
