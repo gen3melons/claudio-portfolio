@@ -1,43 +1,43 @@
 {
-  "lastUpdated": "2026-06-15T10:00:00Z",
+  "lastUpdated": "2026-06-16T10:00:00Z",
   "regime": "risk-on",
-  "regimeNotes": "RISK-ON (upgraded from neutral). Primary catalyst: US-Iran peace deal reached over the weekend, ending the conflict and reopening the Strait of Hormuz. Oil prices tumbled to a 2-3 month low. This is a decisive macro positive that removes the single biggest inflation risk in the prior regime assessment. KEY DATA (Jun 15 pre-market): Nasdaq futures +2.1%, S&P 500 futures +1.3%. GLD +3.1% to 398.40 USD. EURUSD 1.1597 (USD weakening as geopolitical premium unwinds). 10Y yield ~4.45% (from 4.49% prior, likely to fall further as energy-CPI driver reverses). VIX likely contracting from 19.25. Crypto: BTC +1.8% to 65,662 USD, ETH +2.7%, SOL +4.5%. F&G still 20 (Extreme Fear) -- lagging indicator, classic Buffett buy signal. BTC dominance 56.60%, total mcap 2.32T (+1.75% 24h). INFLATION OUTLOOK CHANGE: May CPI was 4.2% y/y driven by +23.5% energy. With oil now collapsing, the next CPI print should be dramatically cooler. Core CPI at 2.9% remains, but the headline scare is over. FED IMPLICATIONS: Kevin Warsh FOMC on June 17 is still pending, but with oil collapse, the inflation-hawk narrative loses its most potent argument. A hold at 4.25-4.50% is near-certain, but tone may be less hawkish than feared. TRADE EXECUTED: BUY 0.053303 BTC at 65,662 USD (3,500 USD) -- adds to core crypto toward 15 pct position cap. Crypto sleeve now at 20.7 pct NAV, well within 35 pct risk-on cap. POST-FOMC PLAN: If Warsh signals patience and rate-path flexibility, deploy additional cash into equities (NVDA candidate) and potentially add to ETH. Keep 19.3 pct cash buffer for opportunistic deployment.",
+  "regimeNotes": "RISK-ON confirmed and extending. Equities: June 15 close S&P 500 +1.65 pct to 7554.29, Nasdaq +3.07 pct to 26683.94 (best day since Mar 31), Dow +0.92 pct to a record 51671.03 -- broad rally continuing on the Iran peace deal / oil collapse. NVDA +3.54 pct to 212.45; SPY to 754.83 (position now +1.78 pct above the 741.75 cost basis). DXY soft near 99.56 (USD weakening); EURUSD 1.1594. 10Y yield ~4.47-4.48 pct, down a touch and still easing. GLD +2.59 pct to 396.55 despite risk-on -- an unusual broad rally (gold + equities up, oil down together) reflecting geopolitical-premium unwind plus dovish Fed repricing rather than a regime conflict. Crypto: BTC 66,529 USD (+1.3 pct vs yesterday's 65,662), ETH 1,789.91 (+4.0 pct), SOL 74.86 (+4.9 pct) -- alts outperforming BTC, dominance ticked down to 56.49 pct from 56.60 pct. Total crypto mcap 2.36T (+1.17 pct 24h). Crypto Fear and Greed still Extreme Fear at 23 -- sentiment lagging price strength by a wide margin (classic contrarian-bullish divergence), but the sleeve is already at 21.0 pct NAV, comfortably mid-way to the 35 pct risk-on cap, so no fresh capital was added today. KEY CATALYST AHEAD: Kevin Warsh's first FOMC meeting as Fed Chair concludes tomorrow June 17 -- CME FedWatch implies a 96 pct probability of a hold at 3.50-3.75 pct, but it is also a Summary of Economic Projections meeting (new dot plot) plus his first press conference, so messaging risk is real and two-sided. DECISION: HOLD, zero trades today. Per yesterday's logged post-FOMC plan, new-money decisions (NVDA entry, ETH add) are deliberately held until after Warsh's press conference rather than front-running a brand-new Fed chair's first major communication. All existing theses intact, no invalidation levels close to being breached. BTC is already near the 15 pct single-entry cap (14.66 pct NAV) so no further BTC adds regardless of FOMC outcome. Cash buffer 19,500.12 USD = 19.15 pct NAV, comfortably above the 5 pct floor and available to deploy once the Fed signal is in hand.",
   "watchlist": ["NVDA", "BRK-B", "COST", "IBIT", "LINK", "ONDO", "SHY"],
   "theses": {
     "SPY": {
-      "thesis": "Core US equity beta; regime now risk-on. Iran deal removes geopolitical drag; SPY at 750.80 pre-market (+1.2%) above prior cost basis of 741.75. S&P benefiting from oil-collapse consumer tailwind and improved Fed flexibility.",
+      "thesis": "Core US equity beta in a confirmed risk-on regime. SPY at 754.83 (+1.78 pct above 741.75 cost), tracking S&P 500's best multi-day run since the Iran deal. Oil-collapse consumer tailwind plus improved Fed flexibility still the drivers.",
       "invalidationLevel": "Sustained close below 660 USD or confirmed Fed re-pricing toward additional hikes."
     },
     "MSFT": {
-      "thesis": "AI/cloud quality compounder at 397.54 pre-market (+1.7%). Strong FCF; Nasdaq-led rally on risk-on regime suits MSFT well. Hold and let compound.",
+      "thesis": "AI/cloud quality compounder at 399.76 (+2.31 pct on the day). Strong FCF; Nasdaq-led rally suits MSFT. Hold and let it compound through FOMC.",
       "invalidationLevel": "Cloud growth deceleration or AI capex without demonstrable ROI; close below 340 USD."
     },
     "GOOGL": {
-      "thesis": "Quality cash machine with AI/search optionality at 365.09 pre-market (+1.5%). Regime favors growth names; GOOGL at a reasonable multiple vs. peers.",
+      "thesis": "Quality cash machine with AI/search optionality at 369.35 (+2.69 pct on the day). Regime favors growth names; still a reasonable multiple vs. peers.",
       "invalidationLevel": "Search share erosion to AI rivals; close below 310 USD."
     },
     "UNH": {
-      "thesis": "Contrarian defensive value at 402.80 pre-market (-1.4% as defensives are sold into risk-on rotation). Long-term thesis intact: analyst upgrades (BofA Buy 450, MS 453, JPM 466), durable earnings, dividend growth.",
+      "thesis": "Contrarian defensive value at 411.04 (+1.19 pct), stabilizing after the risk-on rotation pressure. Analyst upgrades intact (BofA 450, MS 453, JPM 466); durable earnings and dividend growth unchanged.",
       "invalidationLevel": "Further regulatory or medical-cost shock; close below 360 USD."
     },
     "TLT": {
-      "thesis": "Long-duration Treasuries; thesis strengthening as oil collapse removes the primary inflation pressure that was threatening the easing path. TLT at 86.06 pre-market (+0.34%). If Warsh holds and signals patience, yields fall and TLT rallies.",
+      "thesis": "Long-duration Treasuries at 85.72, roughly flat. Thesis depends on Warsh signaling patience tomorrow; a hawkish dot-plot surprise (hold-but-no-cuts-this-year tone) is the key near-term risk to monitor post-FOMC.",
       "invalidationLevel": "10Y yield decisively above 5 pct (Fed forced to hike again)."
     },
     "GLD": {
-      "thesis": "Debasement and tail-risk hedge at 398.40 pre-market (+3.1%). Soft USD (EURUSD 1.160) and geopolitical-relief rally both support gold at these levels. Outstanding performer since entry.",
+      "thesis": "Debasement and tail-risk hedge at 396.55 (+2.59 pct), an outstanding performer since entry. Soft USD and unwind of geopolitical premium both still constructive even as equities rally in parallel.",
       "invalidationLevel": "Real yields spike with strong USD reversal; close below 350 USD."
     },
     "BTC": {
-      "thesis": "Core crypto sleeve leader; added 0.053303 BTC today at 65,662 USD on regime upgrade to risk-on. Total position 0.224359 BTC at avgCost 64,629. F&G Extreme Fear (20) = classic accumulation zone. BTC dominance 56.6%; institutional narrative strong.",
+      "thesis": "Core crypto sleeve leader at 66,529 USD (avgCost 64,629; 0.224359 BTC). Position now 14.66 pct NAV, near the 15 pct single-entry cap, so no further adds regardless of FOMC outcome. F&G still Extreme Fear (23) despite the price rally -- sentiment lagging is itself a constructive signal.",
       "invalidationLevel": "Weekly close below 52,000 USD (trend break)."
     },
     "ETH": {
-      "thesis": "Discounted L1 leader at 1,720.58 (+2.7%). ETH dominance 8.93% still historically low; asymmetric upside if risk-on capital rotates to alts. Hold; consider adding post-FOMC if regime is confirmed.",
+      "thesis": "Discounted L1 leader at 1,789.91 (+4.0 pct on the day), outperforming BTC as dominance slips. ETH dominance still low historically; thesis strengthening but a planned add is held until after tomorrow's FOMC per the logged plan.",
       "invalidationLevel": "Structural loss of share to L1 rivals; close below 1,300 USD."
     },
     "SOL": {
-      "thesis": "Small high-beta satellite at 71.37 (+4.5%). Outperforming in risk-on session. Sized deliberately small (2.1 pct NAV) for narrative upside optionality.",
+      "thesis": "Small high-beta satellite at 74.86 (+4.9 pct on the day), the best-performing holding today. Sized deliberately small (2.17 pct NAV) for narrative upside optionality; no change.",
       "invalidationLevel": "Break below 52 USD; network deterioration or sentiment collapse."
     }
   }

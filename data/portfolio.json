@@ -6,7 +6,7 @@
   "inceptionDate": "2026-06-14",
   "monthlyContributionUSD": 0,
   "manager": "Claudio",
-  "lastReview": "2026-06-15",
+  "lastReview": "2026-06-16",
   "holdings": [
     { "assetClass": "stock",     "symbol": "SPY",  "name": "SPDR S&P 500 ETF",        "priceSource": "ticker:SPY",              "quantity": 17.5254,  "avgCost": 741.75 },
     { "assetClass": "stock",     "symbol": "MSFT", "name": "Microsoft",                "priceSource": "ticker:MSFT",             "quantity": 17.9158,  "avgCost": 390.74 },
