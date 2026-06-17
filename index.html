@@ -249,6 +249,11 @@ function App() {
   const totalPnl = nav - start;
   const totalPnlPct = start ? (totalPnl/start*100) : 0;
   const goalPct = Math.min(100, nav/goal*100);
+  const goalDate = portfolio.goalDate;
+  const msLeft = goalDate ? (new Date(goalDate+'T00:00:00') - Date.now()) : null;
+  const yearsLeft = msLeft != null ? msLeft/(365.25*24*3600*1000) : null;
+  const deadlineLeft = yearsLeft == null ? null : yearsLeft <= 0 ? 'past due' : yearsLeft >= 1 ? yearsLeft.toFixed(1)+'y left' : Math.round(msLeft/(24*3600*1000))+'d left';
+  const reqCagr = (yearsLeft != null && yearsLeft > 0 && nav < goal) ? (Math.pow(goal/nav, 1/yearsLeft)-1)*100 : null;
   const totalCost = holdings.reduce((a,h)=>a+h.cost,0);
 
   const byClass = { stock:0,crypto:0,bond:0,commodity:0,cash };
@@ -305,7 +310,10 @@ function App() {
               <div style={{height:14,background:'var(--surface3)',borderRadius:8,overflow:'hidden'}}>
                 <div style={{width:`${goalPct}%`,height:'100%',background:'linear-gradient(90deg,#3b82f6,#10b981)',borderRadius:8,transition:'width 0.8s'}}/>
               </div>
-              <div style={{fontSize:11,color:'var(--text3)',marginTop:6}}>Inception {fmt.date(portfolio.inceptionDate)} · Start {fmt.usd(start)}</div>
+              <div style={{display:'flex',justifyContent:'space-between',gap:8,flexWrap:'wrap',fontSize:11,color:'var(--text3)',marginTop:6}}>
+                <span>Inception {fmt.date(portfolio.inceptionDate)} · Start {fmt.usd(start)}</span>
+                {goalDate && <span>🎯 Deadline {fmt.date(goalDate)}{deadlineLeft ? ` · ${deadlineLeft}` : ''}{reqCagr != null ? ` · ${reqCagr.toFixed(0)}% / yr to goal` : ''}</span>}
+              </div>
             </div>
           </div>
         </div>
