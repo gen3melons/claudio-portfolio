@@ -6,7 +6,15 @@
 <title>Claudio — Autonomous Portfolio</title>
 <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
+<script>
+  // Force the CLASSIC JSX runtime (React.createElement). Newer @babel/standalone
+  // builds default to the AUTOMATIC runtime, which emits `import {jsx} from
+  // "react/jsx-runtime"` — illegal in this non-module inline script ("Cannot use
+  // import statement outside a module") and leaves the page blank. The app script
+  // below references this preset via data-presets="classic-react".
+  Babel.registerPreset('classic-react', { presets: [[Babel.availablePresets.react, { runtime: 'classic' }]] });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
@@ -53,9 +61,22 @@
 </style>
 </head>
 <body>
-<div id="root"></div>
+<div id="root"><div id="boot" style="padding:40px;color:#8899b0;font-family:sans-serif;font-size:14px">Loading dashboard…</div></div>
+<script>
+  // Safety net: if the app script throws (e.g. a CDN change) and React never
+  // replaces #root, show a readable message instead of a black screen.
+  window.addEventListener('error', function(e){
+    if (document.getElementById('boot')) {
+      document.getElementById('root').innerHTML =
+        '<div style="margin:40px;padding:24px;background:#0f1117;border:1px solid #1e2d40;border-radius:12px;font-family:sans-serif;color:#e2e8f0">'
+        + '<h2 style="color:#ef4444;margin-bottom:8px">Dashboard failed to load</h2>'
+        + '<p style="color:#8899b0;font-size:13px">' + ((e&&e.message)||'Script error') + '</p>'
+        + '<p style="color:#4a5568;font-size:12px;margin-top:8px">Try a hard refresh (Ctrl+F5). If it persists, a CDN script may be blocked or unavailable.</p></div>';
+    }
+  });
+</script>
 
-<script type="text/babel">
+<script type="text/babel" data-presets="classic-react">
 const { useState, useEffect, useRef, useCallback } = React;
 
 // ─── ASSET CLASS META ─────────────────────────────────────────────────────────
