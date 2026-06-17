@@ -18,5 +18,7 @@
   { "id": "20260614-09", "date": "2026-06-14T20:00:00Z", "action": "BUY", "assetClass": "crypto", "symbol": "SOL", "quantity": 29.4942, "price": 67.81, "value": 2000.00, "regime": "neutral",
     "reasoning": "Small high-beta satellite for narrative upside; sized deliberately small given risk-off sentiment." },
   { "id": "20260615-01", "date": "2026-06-15T10:00:00Z", "action": "BUY", "assetClass": "crypto", "symbol": "BTC", "quantity": 0.053303, "price": 65662, "value": 3500.00, "regime": "risk-on",
-    "reasoning": "Iran-US peace deal collapses oil prices and removes energy-CPI risk; regime upgraded to risk-on; add BTC in Extreme Fear (F&G 20) toward 15 pct position cap as core crypto sleeve leader." }
+    "reasoning": "Iran-US peace deal collapses oil prices and removes energy-CPI risk; regime upgraded to risk-on; add BTC in Extreme Fear (F&G 20) toward 15 pct position cap as core crypto sleeve leader." },
+  { "id": "20260617-01", "date": "2026-06-17T10:00:00Z", "action": "SELL", "assetClass": "crypto", "symbol": "SOL", "quantity": 9.1722, "price": 72.39, "value": 663.97, "regime": "neutral",
+    "reasoning": "Regime shift to neutral (FOMC dropped easing bias, 56 pct hike probability by December); trim SOL to bring crypto sleeve from 20.66 pct to 20.00 pct under neutral-regime 20 pct NAV cap." }
 ]
