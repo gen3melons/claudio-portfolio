@@ -1,43 +1,43 @@
 {
-  "lastUpdated": "2026-06-18T12:00:00Z",
+  "lastUpdated": "2026-06-19T12:00:00Z",
   "regime": "neutral",
-  "regimeNotes": "NEUTRAL regime maintained 2026-06-18. Equities at all-time highs (S&P +10 pct YTD, SPY ~750); semiconductors and AI names leading (NVDA, GOOGL up 14-15 pct YTD). Crypto in deepening Extreme Fear (F&G 15, down from 22 on 2026-06-17); BTC dominance 56.06 pct, total crypto mcap 2.29T USD (-0.82 pct 24h). 10Y Treasury 4.43-4.49 pct (elevated but stable). EUR/USD 1.1513 (soft USD, mildly supportive for risk assets). Fed FOMC June 17 projections revised: ~2 cuts expected H2 2026/early 2027 (later than previous forecast); PCE projected ~2.7 pct end-2026; ~30 pct probability of hike by Q1 2027. HOLD day — 0 trades. All 9 positions above invalidation levels, no guardrail breaches. Cash 13.3 pct NAV held as dry powder for risk-on flip (which would expand crypto sleeve from 20 pct to 35 pct cap). NAV 99505.26 USD (-1.61 pct from yesterday 101138.73 USD); pullback driven by broad equity/crypto weakness. Next catalysts: PCE data June 25, next FOMC Q3 2026.",
+  "regimeNotes": "NEUTRAL regime maintained 2026-06-19. Equities near all-time highs (SPX 7486.7; SPY $746.74, slight pullback from $750.33 yesterday). NVDA recovered to $210.69 (+2.96% vs yesterday, now above $208.44 avg cost). BTC fell further to $62,504 (-2.38% vs $64,026 yesterday); crypto in persistent Extreme Fear (F&G 14, same as yesterday). BTC dominance 55.98%, total crypto mcap $2.24T (-2.54% 24h). 10Y Treasury 4.44% (elevated, restrictive). DXY ~99 (soft USD, mildly supportive); EUR/USD ~1.165. Fed: 97% probability of hold at next meeting but rate hike signaled as tail risk for late 2026; no cuts priced near-term. HOLD day — 0 trades. Crypto sleeve at 19.55% NAV (under 20% neutral cap); no room to add crypto without breaching sleeve cap. All stock positions near 15% entry cap; equities at ATH = stretched valuations, not a fear-driven entry. Cash 13.31% NAV maintained as dry powder for risk-on flip. All 9 positions above invalidation levels; no guardrail breaches. Next catalysts: PCE data June 25, next FOMC Q3 2026.",
   "watchlist": ["BRK-B", "COST", "IBIT", "LINK", "ONDO", "SHY", "AVGO", "META"],
   "theses": {
     "SPY": {
-      "thesis": "Core US equity beta at $750.33 (~13.2 pct NAV). S&P at all-time highs (+10 pct YTD) with AI/semiconductor rally broadening. Diversified anchor under the growth-tilted mandate; participates in any continued risk-on leg.",
+      "thesis": "Core US equity beta ($746.74, 13.2% NAV). S&P near all-time highs (SPX 7,486) with AI/semiconductor rally sustaining broad index. Diversified anchor under the growth-tilted mandate; participates in any continued risk-on leg.",
       "invalidationLevel": "Sustained close below 660 USD or confirmed Fed re-pricing toward multiple hikes pushing SPY into a technical downtrend."
     },
     "NVDA": {
-      "thesis": "AI/compute secular leader at $204.65 (-1.82 pct below $208.44 avgCost, ~14.3 pct NAV). Pullback within normal volatility; data-center revenue and hyperscaler capex still accelerating. Highest-conviction growth driver for the 33 pct CAGR target.",
+      "thesis": "AI/compute secular leader at $210.69 (+1.08% above $208.44 avgCost, ~14.7% NAV). Now above average cost after recovery; data-center revenue and hyperscaler capex still accelerating. Highest-conviction growth driver for the 33% CAGR target.",
       "invalidationLevel": "AI capex digestion or data-center demand rollover; close below ~150 USD."
     },
     "MSFT": {
-      "thesis": "Quality AI/cloud compounder at $378.91 (-3.33 pct below $391.98 avgCost, ~14.5 pct NAV). Broad market rotation is pulling back quality names; cloud+AI thesis intact and FCF remains durable. Watching for recovery toward 390+.",
+      "thesis": "Quality AI/cloud compounder at $379.40 (-3.21% below $391.98 avgCost, ~14.5% NAV). Broad market pullback affecting quality names; cloud+AI thesis intact and FCF remains durable. Watching for recovery toward 390+.",
       "invalidationLevel": "Cloud growth deceleration or AI capex without demonstrable ROI; close below 340 USD."
     },
     "GOOGL": {
-      "thesis": "Quality growth (search + cloud + AI) at $363.79 (-0.75 pct below $366.53 avgCost, ~14.4 pct NAV). Minor pullback; near-monopoly search funds AI optionality; resilient earnings in hawkish-rate tape.",
+      "thesis": "Quality growth (search + cloud + AI) at $368.03 (+0.41% above $366.53 avgCost, ~14.5% NAV). Near-monopoly search funds AI optionality; resilient earnings in hawkish-rate tape.",
       "invalidationLevel": "Search share erosion to AI rivals; close below 310 USD."
     },
     "UNH": {
-      "thesis": "Defensive value at $399.53 (-2.20 pct below $408.52 avgCost, ~5.9 pct NAV). Medical-cost and regulatory headwinds persist; retained as defensive ballast now that bonds are gone. Analyst targets 450-466 USD give upside.",
+      "thesis": "Defensive value at $400.96 (-1.85% below $408.52 avgCost, ~5.9% NAV). Medical-cost and regulatory headwinds persist; retained as defensive ballast. Analyst targets 450-466 USD give upside.",
       "invalidationLevel": "Further regulatory or medical-cost shock; close below 360 USD."
     },
     "GLD": {
-      "thesis": "Tail/debasement hedge at $388.60 (above $386.54 avgCost, ~4.3 pct NAV). EUR/USD 1.1513 (soft USD) and central-bank buying still supportive; small size prevents drag on 33 pct CAGR target.",
+      "thesis": "Tail/debasement hedge at $387.12 (above $386.54 avgCost, ~4.3% NAV). EUR/USD 1.165 (soft USD) and central-bank buying supportive; small size prevents drag on 33% CAGR target.",
       "invalidationLevel": "Real yields spike with a strong USD reversal; close below 350 USD."
     },
     "BTC": {
-      "thesis": "Core crypto sleeve leader at $64,026 (-0.93 pct below $64,629 avgCost, ~14.4 pct NAV). F&G 15 (Extreme Fear, deepening) + BTC dominance 56.06 pct = strong contrarian accumulation setup. Held at 20 pct neutral-regime cap for the next risk-on expansion.",
+      "thesis": "Core crypto sleeve leader at $62,504 (-3.29% below $64,629 avgCost, ~14.1% NAV). F&G 14 (Extreme Fear, persistent) + BTC dominance 55.98% = contrarian accumulation setup. Held at 20% neutral-regime cap; positioned for the next risk-on expansion to 35% sleeve cap.",
       "invalidationLevel": "Weekly close below 52,000 USD (trend break)."
     },
     "ETH": {
-      "thesis": "Discounted L1 leader at $1,742.44 (+4.47 pct above $1,667.47 avgCost, ~4.2 pct NAV). Historically low dominance (9.18 pct) = asymmetric upside when risk-on returns. Held within the 20 pct crypto sleeve.",
+      "thesis": "Discounted L1 leader at $1,687.93 (+1.22% above $1,667.47 avgCost, ~4.1% NAV). Historically low dominance (9.10%) = asymmetric upside when risk-on returns. Held within the 20% crypto sleeve.",
       "invalidationLevel": "Structural loss of share to L1 rivals; close below 1,300 USD."
     },
     "SOL": {
-      "thesis": "High-beta satellite at $71.44 (+5.35 pct above $67.81 avgCost, ~1.5 pct NAV). Small narrative optionality; first position to scale up when sleeve cap rises to 35 pct on a risk-on regime flip.",
+      "thesis": "High-beta satellite at $68.18 (+0.55% above $67.81 avgCost, ~1.4% NAV). Small narrative optionality; first position to scale up when sleeve cap rises to 35% on a risk-on regime flip.",
       "invalidationLevel": "Break below 52 USD; network deterioration or sentiment collapse."
     }
   }
