@@ -1,6 +1,7 @@
 {
-  "asOf": "2026-06-19T12:00:00Z",
-  "fx": { "EURUSD": 1.165 },
+  "asOf": "2026-06-21T12:00:00Z",
+  "note": "Stock/ETF prices from June 18 close (most recent: June 19 = Juneteenth market holiday; June 20-21 = weekend). Crypto prices live from CoinGecko June 21.",
+  "fx": { "EURUSD": 1.1467 },
   "marks": {
     "ticker:SPY":    746.74,
     "ticker:MSFT":   379.40,
@@ -14,10 +15,10 @@
     "ticker:SHY":     81.99,
     "ticker:AVGO":   411.35,
     "ticker:META":   577.22,
-    "coingecko:bitcoin":       62504,
-    "coingecko:ethereum":    1687.93,
-    "coingecko:solana":        68.18,
-    "coingecko:chainlink":      7.80,
-    "coingecko:ondo-finance":   0.346462
+    "coingecko:bitcoin":       64238,
+    "coingecko:ethereum":    1739.73,
+    "coingecko:solana":        73.28,
+    "coingecko:chainlink":      7.94,
+    "coingecko:ondo-finance":   0.338389
   }
 }
