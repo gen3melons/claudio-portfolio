@@ -190,5 +190,17 @@
     "value": 7400.02,
     "regime": "neutral",
     "reasoning": "Add to quality growth (search + cloud + AI) toward ~14.5 pct NAV; rotate from ballast into compounding equities for the 2031 goal."
+  },
+  {
+    "id": "20260622-01",
+    "date": "2026-06-22T12:30:00Z",
+    "action": "SELL",
+    "assetClass": "crypto",
+    "symbol": "SOL",
+    "quantity": 3.48,
+    "price": 74.09,
+    "value": 257.83,
+    "regime": "neutral",
+    "reasoning": "Trim SOL to bring crypto sleeve from 20.26 pct to 20.0 pct; neutral-regime hard cap is 20 pct; crypto gained while pre-market stock prices softened, causing sleeve drift above cap."
   }
 ]

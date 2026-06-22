@@ -1,43 +1,43 @@
 {
-  "lastUpdated": "2026-06-21T13:30:00Z",
+  "lastUpdated": "2026-06-22T12:30:00Z",
   "regime": "neutral",
-  "regimeNotes": "NEUTRAL regime maintained 2026-06-21 (Sunday, re-run). Stock prices held at June 18 close — June 19 was Juneteenth market holiday; June 20-21 are weekend; next trading day is Monday June 22. SPY $746.74, NVDA $210.69, MSFT $379.40, GOOGL $368.03, UNH $400.96 (all unchanged since last review). Crypto slightly softer vs earlier run: BTC $64,169 (-$69 vs $64,238 earlier), ETH $1,731.08 (-$8.65), SOL $73.90 (+$0.62). F&G index 23 (Extreme Fear, unchanged). BTC dominance 56.22%, total crypto mcap $2.29T (+0.62% 24h). 10Y yield 4.44-4.45% (elevated, restrictive). DXY ~100.79 (slightly easier, mild tailwind for risk). EUR/USD ~1.1467. Fed: hawkish stance maintained. HOLD day — 0 trades. Crypto sleeve at 20.03% NAV (at neutral 20% cap — no room to add). All major stock positions near 15% NAV entry cap — not a fear-driven entry. Cash 13.23% NAV. NAV $100,107.30 (down $23.61 vs earlier run due to crypto softness). Next catalysts: PCE data June 25, first trading day back Monday June 22.",
+  "regimeNotes": "NEUTRAL regime maintained 2026-06-22 (first trading day after Juneteenth holiday + weekend). Fed held rate range 3.50-3.75% but shifted to hawkish posture: 9 of 18 FOMC members now expect at least one rate hike by year-end 2026; market pricing shifted from cuts to potential hikes. DXY rose to ~100.76-101, highest since May 2025 — strong USD is a headwind for risk assets. 10Y yield 4.49% (+0.03% today), elevated and restrictive. S&P 500 at ~7,431 (+0.15% from June 18 close, near ATH). Crypto: BTC $64,649 (+0.88% 24h), ETH $1,765.54 (+2.51%), SOL $74.09 (+1.25%). F&G index 20 (Extreme Fear, unchanged). BTC dominance 56.21%. Total crypto mcap $2.30T (+0.86% 24h). IBIT pre-market +2.84% signals positive BTC ETF flows. EUR/USD 1.1462. Key event: Alphabet Gemini co-lead Noam Shazeer departed to join OpenAI — AI talent risk for GOOGL flagged but thesis not invalidated. Dalio quadrant: reflation-leaning (equities near ATH, but rate-hike probability rising). Action: trimmed SOL 3.48 shares to bring crypto sleeve from 20.26 pct to 20.00 pct under neutral-regime hard cap. 1 trade. NAV $99,938.19 (-$169.11 / -0.17 pct from June 21). Next catalysts: PCE data ~June 25, any Fed speaker guidance on rate path, GOOGL competitive positioning update.",
   "watchlist": ["BRK-B", "COST", "IBIT", "LINK", "ONDO", "SHY", "AVGO", "META"],
   "theses": {
     "SPY": {
-      "thesis": "Core US equity beta ($746.74, 13.07% NAV). S&P near all-time highs with AI/semiconductor rally sustaining broad index. Diversified anchor under the growth-tilted mandate; participates in any continued risk-on leg.",
+      "thesis": "Core US equity beta ($746.77 pre-market, 13.10% NAV). S&P near all-time highs (~7,431) with AI/semiconductor rally sustaining broad index; resilient despite hawkish Fed pivot. Diversified anchor under the growth-tilted mandate.",
       "invalidationLevel": "Sustained close below 660 USD or confirmed Fed re-pricing toward multiple hikes pushing SPY into a technical downtrend."
     },
     "NVDA": {
-      "thesis": "AI/compute secular leader at $210.69 (above $208.44 avgCost, ~14.64% NAV). Data-center revenue and hyperscaler capex still accelerating. Highest-conviction growth driver for the 33% CAGR target.",
+      "thesis": "AI/compute secular leader at $210.13 pre-market (above $208.44 avgCost, ~14.63% NAV). NVDA raised $25B in bonds on June 15 signaling management confidence in sustained AI capex demand. Highest-conviction growth driver for the 33% CAGR target.",
       "invalidationLevel": "AI capex digestion or data-center demand rollover; close below ~150 USD."
     },
     "MSFT": {
-      "thesis": "Quality AI/cloud compounder at $379.40 (below $391.98 avgCost, ~14.43% NAV). Broad market conditions affecting quality names; cloud+AI thesis intact and FCF durable. Watching for recovery toward 390+.",
+      "thesis": "Quality AI/cloud compounder at $377.99 pre-market (below $391.98 avgCost, ~14.40% NAV). Azure cloud + Copilot AI revenue growing; thesis intact. Holding below avg cost; watching for recovery toward 390+.",
       "invalidationLevel": "Cloud growth deceleration or AI capex without demonstrable ROI; close below 340 USD."
     },
     "GOOGL": {
-      "thesis": "Quality growth (search + cloud + AI) at $368.03 (above $366.53 avgCost, ~14.44% NAV). Near-monopoly search funds AI optionality; resilient earnings in hawkish-rate tape.",
-      "invalidationLevel": "Search share erosion to AI rivals; close below 310 USD."
+      "thesis": "Quality growth (search + cloud + AI) at $361.30 pre-market (below $366.53 avgCost, ~14.20% NAV). Noam Shazeer (Gemini co-lead) departed to OpenAI — negative AI talent signal but search monopoly and cloud revenue stream remain dominant. $84.75B capital raise in June 2026 funds $180-190B capex plan. HOLD; thesis not invalidated at current price.",
+      "invalidationLevel": "Search share erosion to AI rivals causing revenue decline; close below 310 USD."
     },
     "UNH": {
-      "thesis": "Defensive value at $400.96 (below $408.52 avgCost, ~5.88% NAV). Medical-cost and regulatory headwinds persist; retained as defensive ballast. Analyst targets 450-466 USD give upside.",
+      "thesis": "Defensive value at $400.50 pre-market (below $408.52 avgCost, ~5.89% NAV). Medical-cost and regulatory headwinds persist; retained as defensive ballast and portfolio diversifier. Analyst targets 450-466 USD give upside if headwinds abate.",
       "invalidationLevel": "Further regulatory or medical-cost shock; close below 360 USD."
     },
     "GLD": {
-      "thesis": "Tail/debasement hedge at $387.12 (above $386.54 avgCost, ~4.27% NAV). Central-bank buying supportive; small size prevents drag on 33% CAGR target. DXY ~100.79 easing slightly.",
+      "thesis": "Tail/debasement hedge at $387.12 (above $386.54 avgCost, ~4.28% NAV). Central-bank buying supportive; small size prevents drag on 33% CAGR target. DXY rising toward 101 is a headwind; monitoring whether this forces a further trim.",
       "invalidationLevel": "Real yields spike with a strong USD reversal; close below 350 USD."
     },
     "BTC": {
-      "thesis": "Core crypto sleeve leader at $64,169 (below $64,629 avgCost, ~14.38% NAV). F&G 23 (Extreme Fear), BTC dominance 56.22% stable. Minor softness from earlier run, well above invalidation. Positioned for the next risk-on expansion to 35% sleeve cap.",
+      "thesis": "Core crypto sleeve leader at $64,649 (above $64,629 avgCost, ~14.51% NAV). F&G 20 (Extreme Fear) is contrarian bullish; BTC dominance 56.21% stable; IBIT pre-market +2.84% signals institutional demand. Well-positioned for next risk-on expansion when sleeve cap rises to 35%.",
       "invalidationLevel": "Weekly close below 52,000 USD (trend break)."
     },
     "ETH": {
-      "thesis": "Discounted L1 leader at $1,731.08 (above $1,667.47 avgCost, ~4.15% NAV). Dominance 9.13% remains historically low = asymmetric upside when risk-on returns. Held within the 20% crypto sleeve.",
+      "thesis": "Discounted L1 leader at $1,765.54 (+2.51% 24h, above $1,667.47 avgCost, ~4.24% NAV). Dominance 9.25% rising (was 9.13%). Asymmetric upside when risk-on returns and capital rotates into alts.",
       "invalidationLevel": "Structural loss of share to L1 rivals; close below 1,300 USD."
     },
     "SOL": {
-      "thesis": "High-beta satellite at $73.90 (above $67.81 avgCost, ~1.50% NAV). +3.3% 24h shows strong beta in a recovering crypto tape. First position to scale up when sleeve cap rises to 35% on a risk-on regime flip.",
+      "thesis": "High-beta satellite at $74.09 (above $67.81 avgCost, ~1.25% NAV). Trimmed from 20.322 to 16.842 shares to restore crypto sleeve to neutral 20% cap after crypto appreciated while stocks softened. First position to scale up when sleeve cap rises to 35% on risk-on regime flip.",
       "invalidationLevel": "Break below 52 USD; network deterioration or sentiment collapse."
     }
   }
