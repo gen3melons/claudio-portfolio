@@ -1,43 +1,43 @@
 {
-  "lastUpdated": "2026-06-24T14:00:00Z",
+  "lastUpdated": "2026-06-25T00:00:00Z",
   "regime": "neutral",
-  "regimeNotes": "NEUTRAL regime maintained 2026-06-24. Fed Chair Kevin Warsh held rates at 3.50-3.75% (June 17 decision) but dot plot projects a majority of FOMC members expecting at least one hike by year-end; September hike probability now ~68% (up from ~56% last week) — the most hawkish Fed posture in this cycle. 10Y Treasury yield 4.50%. DXY at 101.35, EUR/USD 1.1371 (dollar firmer, headwind for risk assets and gold). Strong PMI data supports resilient economy but also locks in hawkish stance. S&P 500 near ATH (~7,420, SPY $733.58); market digesting the hawkish repricing. Crypto: BTC $62,566 (+0.28%), ETH $1,664 (+0.63%), SOL $69.17 (+0.30%); Fear and Greed index dropped sharply to 17 (Extreme Fear, from 23 yesterday). Total crypto market cap $2.23T (+0.37%); BTC dominance 56.25%. All positions above their invalidation levels. Crypto sleeve at 19.69% of NAV (within 20% neutral cap). Cash at 13.85% of NAV (above 5% minimum). Zero trades today: hawkish Fed repricing + elevated DXY argue against adding risk; all existing theses intact; cash held as dry powder for better entries.",
+  "regimeNotes": "NEUTRAL regime maintained 2026-06-25. DXY climbed to 13-month high (~101.4-101.6), its strongest level since May 2025, driven by safe-haven demand from a tech/semiconductor sector selloff and elevated Fed rate-hike expectations. September hike probability surged to 70% (from 29% a week ago); July hike probability at 37%. Fed Chair Kevin Warsh reaffirmed hawkish commitment. 10Y Treasury yield 4.41% (up 0.02pp from prior session). EUR/USD 1.1363 (dollar firming). S&P 500 SPY at $733.24 (near ATH); broad tech and semiconductor names under pressure as investors take profits from prolonged rally. Crypto: BTC $61,595 (-1.55%), ETH $1,645.30 (-1.15%), SOL $68.73 (-0.63%); Fear and Greed index dropped to 12 (Extreme Fear, even deeper than yesterday's 17). Total crypto market cap $2.20T (-0.98%); BTC dominance 56.10%. GLD declined to $365.92 (strong DXY headwind; still above $350 invalidation level). All positions above their invalidation levels. Crypto sleeve at 19.59% of NAV (within 20% neutral cap). Cash at 13.98% of NAV (well above 5% minimum). Zero trades today: hawkish macro (September hike 70%), DXY at 13-month high, tech selloff, and deepening crypto Extreme Fear argue against adding risk; all existing theses intact; maintain dry powder for better entries when regime improves.",
   "watchlist": ["BRK-B", "COST", "IBIT", "LINK", "ONDO", "SHY", "AVGO", "META"],
   "theses": {
     "SPY": {
-      "thesis": "Core US equity beta (13.18% NAV). S&P near ATH (~7,420) with resilient broad index; SPY $733.58 slightly below avgCost $741.75. Broad diversification anchor; holds value even if specific names underperform.",
+      "thesis": "Core US equity beta (13.30% NAV). S&P near ATH with broad index resilience; SPY $733.24 slightly below avgCost $741.75. Diversification anchor; hawkish macro and tech selloff are temporary headwinds above the 660 invalidation.",
       "invalidationLevel": "Sustained close below 660 USD or confirmed Fed re-pricing toward multiple hikes pushing SPY into a technical downtrend."
     },
     "NVDA": {
-      "thesis": "AI/compute secular leader at $200.04 (below $208.44 avgCost, 14.27% NAV). AI capex cycle intact; continued pullback from prior highs offers opportunity to add on risk-on regime shift. Highest-conviction growth driver for the 33% CAGR target.",
+      "thesis": "AI/compute secular leader at $199.00 (below $208.44 avgCost, 14.33% NAV). Tech/semiconductor sector selloff is market-wide profit-taking; AI capex cycle and data-center demand thesis intact. Hold through volatility.",
       "invalidationLevel": "AI capex digestion or data-center demand rollover; close below 150 USD."
     },
     "MSFT": {
-      "thesis": "Quality AI/cloud compounder at $373.94 (below $391.98 avgCost, 14.60% NAV). Azure + Copilot revenue growing; rate headwind temporary. Thesis intact — holding through weakness.",
+      "thesis": "Quality AI/cloud compounder at $365.46 (below $391.98 avgCost, 14.41% NAV). Azure + Copilot revenue growing; rate headwind and tech selloff temporary. Thesis intact — holding through weakness.",
       "invalidationLevel": "Cloud growth deceleration or AI capex without demonstrable ROI; close below 340 USD."
     },
     "GOOGL": {
-      "thesis": "Quality growth (search + cloud + AI) at $346.13 (below $366.53 avgCost, 13.95% NAV). Search monopoly and cloud revenue dominant; $84.75B capital raise funds $180-190B capex plan. HOLD.",
+      "thesis": "Quality growth (search + cloud + AI) at $345.29 (below $366.53 avgCost, 14.04% NAV). Search monopoly and cloud revenue dominant. Tech selloff is sector-wide noise; thesis intact. HOLD.",
       "invalidationLevel": "Search share erosion to AI rivals causing revenue decline; close below 310 USD."
     },
     "UNH": {
-      "thesis": "Defensive value at $409.25 (above $408.52 avgCost, 6.16% NAV). Medical-cost and regulatory headwinds; retained as defensive ballast. Performing well relative to growth names.",
+      "thesis": "Defensive value at $405.80 (below $408.52 avgCost, 6.17% NAV). Outperforming relative to growth names in tech selloff environment; defensive ballast performing its role.",
       "invalidationLevel": "Further regulatory or medical-cost shock; close below 360 USD."
     },
     "GLD": {
-      "thesis": "Tail/debasement hedge at $377.32 (below $386.54 avgCost, 4.27% NAV). Central-bank buying supportive; strong DXY is a headwind but small size prevents meaningful drag on CAGR target. Retained as stagflation/inflation optionality.",
+      "thesis": "Tail/debasement hedge at $365.92 (below $386.54 avgCost, 4.18% NAV). Strong DXY (101.4+) is a headwind; monitoring proximity to $350 invalidation. Small position limits NAV drag.",
       "invalidationLevel": "Real yields spike with strong USD reversal sustained; close below 350 USD."
     },
     "BTC": {
-      "thesis": "Core crypto sleeve leader at $62,566 (below $64,629 avgCost, 14.40% NAV). F&G 17 (Extreme Fear) is contrarian bullish signal; BTC dominance 56.25% stable. Well-positioned for next risk-on expansion when sleeve cap rises to 35%.",
+      "thesis": "Core crypto sleeve leader at $61,595 (below $64,629 avgCost, 14.31% NAV). F&G 12 (Extreme Fear) is deeply contrarian bullish; BTC dominance 56.10% stable. Well-positioned for next risk-on expansion when sleeve cap rises to 35%.",
       "invalidationLevel": "Weekly close below 52,000 USD (trend break)."
     },
     "ETH": {
-      "thesis": "Discounted L1 leader at $1,664.48 (near $1,667.47 avgCost, 4.10% NAV). ETH dominance recovering to 9.0%; asymmetric upside when risk-on returns and capital rotates into alts. Small position appropriate.",
+      "thesis": "Discounted L1 leader at $1,645.30 (below $1,667.47 avgCost, 4.09% NAV). ETH dominance 9.02%; asymmetric upside when risk-on returns and capital rotates into alts. Small position appropriate.",
       "invalidationLevel": "Structural loss of share to L1 rivals; close below 1,300 USD."
     },
     "SOL": {
-      "thesis": "High-beta satellite at $69.17 (above $67.81 avgCost, 1.20% NAV). Small position to ride volatility; first to scale up when regime flips to risk-on and crypto sleeve cap expands to 35%.",
+      "thesis": "High-beta satellite at $68.73 (above $67.81 avgCost, 1.20% NAV). Small position to ride volatility; first to scale up when regime flips to risk-on and crypto sleeve cap expands to 35%.",
       "invalidationLevel": "Break below 52 USD; network deterioration or sentiment collapse."
     }
   }
