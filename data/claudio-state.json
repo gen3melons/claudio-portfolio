@@ -1,43 +1,43 @@
 {
-  "lastUpdated": "2026-06-26T12:00:00Z",
+  "lastUpdated": "2026-06-27T12:00:00Z",
   "regime": "neutral",
-  "regimeNotes": "NEUTRAL regime maintained 2026-06-26. DXY ~101.40 (13-month high; prior close 101.43, essentially unchanged). 10Y Treasury yield 4.45% (Jun 25 close). Fed median 2026 year-end dot shifted to 3.8% (from 3.4% in March); October rate hike now priced in by markets. Iran conflict sustaining energy-driven inflation at multi-year highs, delaying any easing path. Crypto: BTC $58,773 (-3.92% 24h) — below prior $61,595; ETH $1,527.67 (-6.40% 24h); SOL $68.65 (+0.67%). Fear and Greed 13 (Extreme Fear, persistent). Total crypto mcap $2.13T (-0 net from prior); BTC dominance 55.69%. Equities: SPY $734.30 (~flat, near ATH); PCE in-line with expectations; tech names (MSFT, NVDA) under pressure but broad index resilient. GLD $369.46 (stable above $350 invalidation). Crypto sleeve 18.93% of NAV (within 20% neutral cap). Cash 14.20% of NAV (well above 5% floor). NAV $95,114.77. No invalidation levels breached. Zero trades today: Fed hawkish pivot toward October hike, DXY at 13-month high, crypto in Extreme Fear and declining, tech names under selling pressure — hold dry powder; all existing theses intact; await regime clarity before adding risk.",
+  "regimeNotes": "NEUTRAL regime maintained 2026-06-27. 10Y Treasury yield 4.39% (7-week low; positive PCE data limited rate-hike expectations, a modest macro tailwind). DXY 101.37 (essentially flat vs prior 101.43; still elevated near 13-month high). Fed held at 3.5-3.75% in June meeting under new Chair Kevin Warsh; BofA forecasts 3 rate hikes in 2026 (target 4.25-4.50%), though PCE softness challenges that outlook. Crypto: BTC $60,194 (+1.34% 24h) — rebounding from $58,773 low; ETH $1,578.95 (+2.16%); SOL $71.57 (+4.33%). Fear and Greed 15 (Extreme Fear, persistent). Total crypto mcap $2.16T (+1.48% 24h); BTC dominance 55.80% (stable). Equities: SPY $728.99 (-0.72% Fri close); MSFT $372.97 (+5.71% on positive PCE data + Michael Burry disclosed long call positions); NVDA $192.53 (-1.64%); GOOGL $337.39 (-1.84%); UNH $427.89 (+2.97% defensive bid). GLD $373.63 (+1.13% on yield softening). Crypto sleeve 19.26% of NAV (within 20% neutral cap — no room to add crypto). Cash 14.06% of NAV (well above 5% floor). NAV $96,035.56 (+$920.80 from yesterday). Zero trades: MSFT bounce is encouraging but one PCE print; BofA rate-hike risk + persistent Extreme Fear = NEUTRAL maintained; crypto sleeve near cap prohibits BTC addition; all stock theses intact above invalidation levels; hold dry powder pending clearer regime signal.",
   "watchlist": ["BRK-B", "COST", "IBIT", "LINK", "ONDO", "SHY", "AVGO", "META"],
   "theses": {
     "SPY": {
-      "thesis": "Core US equity beta at $734.30 (near ATH; above $741.75 avgCost by small margin). Broad S&P index showing resilience despite tech selloff and hawkish Fed pivot; sector rotation into industrials and healthcare supporting index. HOLD.",
+      "thesis": "Core US equity beta at $728.99 (below $741.75 avgCost; -1.72%). Broad index resilient despite Fed hawkishness; PCE data positive; sector rotation supporting breadth. Hold as diversified US equity anchor.",
       "invalidationLevel": "Sustained close below 660 USD or confirmed multi-hike path forcing a technical downtrend in the broad index."
     },
     "NVDA": {
-      "thesis": "AI/compute secular leader at $195.74 (below $208.44 avgCost, 14.32% NAV). Tech selloff is broad profit-taking; AI capex cycle and data-center demand intact — Micron's strong AI memory earnings a positive read-through for NVDA. Hold through volatility.",
+      "thesis": "AI/compute secular leader at $192.53 (below $208.44 avgCost; -7.63%). Continuing broad tech pressure but AI capex cycle and data-center demand intact. Micron AI memory strength confirms demand side; holding through volatility.",
       "invalidationLevel": "AI capex digestion or data-center demand rollover; close below 150 USD."
     },
     "MSFT": {
-      "thesis": "Quality AI/cloud compounder at $352.83 (below $391.98 avgCost, 14.13% NAV). Azure + Copilot revenue growing; Iran-war inflation and rate hike risk are temporary headwinds. Thesis intact — holding through weakness.",
+      "thesis": "Quality AI/cloud compounder at $372.97 (below $391.98 avgCost; -4.85%). Michael Burry disclosed large long call positions; positive PCE data triggered +5.71% recovery. Azure + Copilot revenue growing. Thesis firmly intact.",
       "invalidationLevel": "Cloud growth deceleration or AI capex without demonstrable ROI; close below 340 USD."
     },
     "GOOGL": {
-      "thesis": "Quality growth (search + cloud + AI) at $343.71 (below $366.53 avgCost, 14.20% NAV). Search monopoly and cloud revenue dominant. Tech selloff is sector-wide noise; thesis intact. HOLD.",
+      "thesis": "Quality growth (search + cloud + AI) at $337.39 (below $366.53 avgCost; -7.96%). Declining for several sessions; monitoring distance to $310 invalidation. Search monopoly and cloud revenue dominant — thesis intact but watching closely.",
       "invalidationLevel": "Search share erosion to AI rivals causing revenue decline; close below 310 USD."
     },
     "UNH": {
-      "thesis": "Defensive value at $415.53 (above $408.52 avgCost — in profit, 6.42% NAV). Healthcare defensives outperforming as investors rotate from tech; serves as ballast against growth-stock volatility.",
+      "thesis": "Defensive value at $427.89 (above $408.52 avgCost; +4.73% profit, 6.54% NAV). Healthcare defensives benefiting from rotation away from growth risk during rate-hike fears. Serves as ballast. HOLD.",
       "invalidationLevel": "Further regulatory or medical-cost shock; close below 360 USD."
     },
     "GLD": {
-      "thesis": "Tail/debasement hedge at $369.46 (below $386.54 avgCost, 4.29% NAV). DXY at 13-month high is a headwind; Iran conflict geopolitical risk provides partial support. Small position limits NAV drag; monitoring proximity to $350 invalidation.",
+      "thesis": "Tail/debasement hedge at $373.63 (below $386.54 avgCost; -3.34%, 4.30% NAV). Yield softening to 4.39% is a tailwind; geopolitical risk still supportive. Small position limits NAV drag. HOLD.",
       "invalidationLevel": "Real yields spike with strong USD reversal sustained; close below 350 USD."
     },
     "BTC": {
-      "thesis": "Core crypto sleeve leader at $58,773 (below $64,629 avgCost, 13.86% NAV). BTC dropped -4% today on persistent hawkish Fed signals and DXY strength. F&G 13 (Extreme Fear) is deeply contrarian bullish historically; BTC dominance 55.69% stable. Well-positioned for next risk-on expansion. Monitor $52K weekly close carefully.",
+      "thesis": "Core crypto sleeve leader at $60,194 (below $64,629 avgCost; -6.87%, 14.06% NAV). Rebounding from $58,773 low; F&G 15 (Extreme Fear) is historically contrarian bullish; BTC dominance 55.80% stable. Crypto sleeve near 20% neutral cap — cannot add without breaching cap. Hold; await risk-on regime for deployment.",
       "invalidationLevel": "Weekly close below 52,000 USD (trend break)."
     },
     "ETH": {
-      "thesis": "Discounted L1 leader at $1,527.67 (below $1,667.47 avgCost, 3.85% NAV). ETH dominance 8.71%; -6.4% today reflects broad risk-off in crypto. Asymmetric upside when risk-on returns. Small position appropriate given macro headwinds.",
+      "thesis": "Discounted L1 leader at $1,578.95 (below $1,667.47 avgCost; -5.30%, 3.95% NAV). ETH dominance 8.81%; recovering +2.16% today alongside crypto market bounce. Asymmetric upside when risk-on returns. Small position appropriate.",
       "invalidationLevel": "Structural loss of share to L1 rivals; close below 1,300 USD."
     },
     "SOL": {
-      "thesis": "High-beta satellite at $68.65 (above $67.81 avgCost, 1.22% NAV). Small position to ride volatility; first to scale up when regime flips to risk-on and crypto sleeve cap expands to 35%.",
+      "thesis": "High-beta satellite at $71.57 (above $67.81 avgCost; +5.55% profit, 1.26% NAV). Strong +4.33% day. Small position to capture upside when regime flips to risk-on and crypto sleeve cap expands to 35%.",
       "invalidationLevel": "Break below 52 USD; network deterioration or sentiment collapse."
     }
   }
