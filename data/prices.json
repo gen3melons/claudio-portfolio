@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-06-27T00:00:00Z",
-  "note": "Prices from June 26 2026 market close (Saturday review; last trading day Friday June 26)",
-  "fx": { "EURUSD": 1.1385 },
+  "asOf": "2026-06-28T12:00:00Z",
+  "note": "Equity prices from June 26 2026 market close (Sunday review; markets closed). Crypto updated to June 28 spot. EURUSD from June 28.",
+  "fx": { "EURUSD": 1.1380 },
   "marks": {
     "ticker:SPY":               728.99,
     "ticker:MSFT":              372.97,
@@ -15,9 +15,9 @@
     "ticker:SHY":                82.19,
     "ticker:AVGO":              365.02,
     "ticker:META":              550.25,
-    "coingecko:bitcoin":      60194.00,
-    "coingecko:ethereum":      1578.95,
-    "coingecko:solana":          71.57,
+    "coingecko:bitcoin":      60113.00,
+    "coingecko:ethereum":      1575.67,
+    "coingecko:solana":          71.33,
     "coingecko:chainlink":        7.33,
     "coingecko:ondo-finance":     0.315469
   }
