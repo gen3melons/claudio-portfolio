@@ -1,43 +1,43 @@
 {
-  "lastUpdated": "2026-06-28T12:00:00Z",
+  "lastUpdated": "2026-07-02T13:00:00Z",
   "regime": "neutral",
-  "regimeNotes": "NEUTRAL regime maintained 2026-06-28 (Sunday). Markets closed — equity prices carry over from Friday June 26 close. Crypto slightly weaker overnight: BTC $60,113 (-0.38% 24h), ETH $1,575.67 (-0.31%), SOL $71.33 (-0.61%). Fear and Greed 18 (Extreme Fear, persistent for 2+ weeks). BTC dominance 55.85% (stable). Total crypto mcap $2.16T (-0.44% 24h). 10Y Treasury yield 4.40% (essentially flat). DXY ~101.5 (still elevated, strong USD remains a headwind for risk assets). EURUSD 1.1380. University of Michigan Consumer Sentiment at record low (Iran war / cost of living impact). S&P 500 breadth improving even on down days — rotation out of tech into other sectors. Analysts project 25% full-year 2026 S&P 500 EPS growth. Falling crude oil prices reduce CPI/PCE inflation pressure (positive macro tail). Key data upcoming: June 30 consumer confidence + JOLTS; July 3 jobs report. Crypto sleeve 19.24% of NAV (tight but within 20% neutral-cap — no room to add crypto). Cash 14.06% of NAV. No trades: all theses intact above invalidation levels; no clear edge for new entries on a Sunday no-data day; hold dry powder for June 30 / July jobs data to clarify regime.",
+  "regimeNotes": "NEUTRAL regime maintained 2026-07-02 (Wednesday). S&P 500 closed July 1 at 7,483 (-0.2% on the day); up 9.6% H1 2026, Nasdaq +12.8%, Russell 2000 +22% best H1 since 1991. July 2 markets opened lower as investors digested jobs data and awaited Fed Chair Warsh. June ADP private payrolls 98K (below 115K consensus); official June NFP released 8:30 AM ET today — consensus 115K jobs, 4.3% unemployment. 10Y Treasury yield 4.47% (slightly eased from 4.50%). DXY ~101.2 (still elevated; strong USD headwind for risk assets). EURUSD 1.16. Fed (Warsh) held rates at 3.5-3.75% on June 17; 9 of 18 FOMC members project a rate hike before year-end; PCE revised up to 3.6% — hawkish posture. Crypto recovering sharply: BTC $61,039 (+3.81%), ETH $1,642 (+4.09%), SOL $79.53 (+5.59%), total mcap $2.19T (+3.33% 24h). BTC dominance 55.84%. Fear and Greed 19 (Extreme Fear) — contrarian bullish signal persisting 3+ weeks. BTC ETF outflows continue (IBIT -$212M, FBTC -$10M). Citi cut 12-month BTC target to $82K. META surged +8.81% to $612.91 on July 1 (watchlist). Crypto sleeve at 19.27% of NAV — within 20% neutral cap, no room to add. Cash at 13.72% of NAV. REGIME UNCHANGED — S&P in uptrend but Fed hawkish, DXY elevated, BTC ETF outflows, Extreme Fear: not enough evidence for risk-on. No trades: all theses intact above invalidation levels; jobs report uncertainty warrants patience; no new position clears the bar today.",
   "watchlist": ["BRK-B", "COST", "IBIT", "LINK", "ONDO", "SHY", "AVGO", "META"],
   "theses": {
     "SPY": {
-      "thesis": "Core US equity beta at $728.99 (below $741.75 avgCost; -1.72%). Broad index resilient; market breadth improving with sector rotation as positive development. Hold as diversified US equity anchor. Key catalysts: June 30 consumer confidence + JOLTS, July jobs report.",
+      "thesis": "Core US equity beta at $745.00 (above $741.75 avgCost; +0.44%, ~13.26% NAV). S&P 500 up 9.6% H1 2026; broad index resilient with improving breadth. Hold as diversified US equity anchor; key macro catalyst is July NFP + Fed July 29 FOMC.",
       "invalidationLevel": "Sustained close below 660 USD or confirmed multi-hike path forcing a technical downtrend in the broad index."
     },
     "NVDA": {
-      "thesis": "AI/compute secular leader at $192.53 (below $208.44 avgCost; -7.63%). AI capex cycle and data-center demand intact; breadth rotation slightly away from tech short-term but secular thesis unbroken. Hold through volatility; monitor AI demand commentary at earnings.",
+      "thesis": "AI/compute secular leader at $197.58 (below $208.44 avgCost; -5.20%, ~13.96% NAV). Down -1.25% on July 1 amid early tech rotation but AI capex cycle and data-center demand intact. Secular thesis unbroken; monitor AI demand commentary at upcoming earnings.",
       "invalidationLevel": "AI capex digestion or data-center demand rollover; close below 150 USD."
     },
     "MSFT": {
-      "thesis": "Quality AI/cloud compounder at $372.97 (below $391.98 avgCost; -4.85%). Azure + Copilot growth intact; Michael Burry disclosed large long call positions. Rotation from tech may create short-term pressure but durable earnings compounder. HOLD.",
+      "thesis": "Quality AI/cloud compounder at $384.28 (below $391.98 avgCost; -1.96%, ~14.86% NAV). Recovering from June lows. Azure + Copilot growth intact; approaching 15% position cap so no further adds without NAV growth. HOLD.",
       "invalidationLevel": "Cloud growth deceleration or AI capex without demonstrable ROI; close below 340 USD."
     },
     "GOOGL": {
-      "thesis": "Quality growth (search + cloud + AI) at $337.39 (below $366.53 avgCost; -7.96%). Search monopoly and cloud revenue dominant. Watching distance to $310 invalidation carefully — down ~7.96% from cost. Thesis intact but monitor AI search competition.",
+      "thesis": "Quality growth (search + cloud + AI) at $361.21 (below $366.53 avgCost; -1.45%, ~14.41% NAV). Strong recovery from $337 lows in June — nearly back to avg cost. Search monopoly thesis intact; AI integration ongoing. HOLD.",
       "invalidationLevel": "Search share erosion to AI rivals causing revenue decline; close below 310 USD."
     },
     "UNH": {
-      "thesis": "Defensive value at $427.89 (above $408.52 avgCost; +4.73%, ~6.55% NAV). Healthcare defensives providing portfolio ballast during rate-hike fears; serves as natural risk hedge. HOLD.",
+      "thesis": "Defensive value at $426.54 (above $408.52 avgCost; +4.41%, ~6.36% NAV). Healthcare defensives providing portfolio ballast during rate-uncertainty period. Small position serves as natural risk hedge. HOLD.",
       "invalidationLevel": "Further regulatory or medical-cost shock; close below 360 USD."
     },
     "GLD": {
-      "thesis": "Tail/debasement hedge at $373.63 (below $386.54 avgCost; -3.34%, ~4.30% NAV). Yield softening from PCE data is a tailwind; geopolitical risk (Iran) still supportive. Small position limits NAV drag while providing asymmetric upside in risk-off scenario. HOLD.",
+      "thesis": "Tail/debasement hedge at $370.60 (below $386.54 avgCost; -4.12%, ~4.16% NAV). DXY elevated at 101.2 is a headwind; Fed hawkish posture also weighs on gold. Small position limits NAV drag while providing asymmetric upside in risk-off scenario or USD reversal. HOLD.",
       "invalidationLevel": "Real yields spike with strong USD reversal sustained; close below 350 USD."
     },
     "BTC": {
-      "thesis": "Core crypto sleeve leader at $60,113 (below $64,629 avgCost; -6.99%, ~14.05% NAV). F&G 18 (Extreme Fear) is historically contrarian bullish; BTC dominance 55.85% stable. Crypto sleeve at 19.24% — near 20% neutral cap, cannot add without breach. Hold; await risk-on regime or F&G improvement for deployment.",
+      "thesis": "Core crypto sleeve leader at $61,039 (below $64,629 avgCost; -5.56%, ~13.91% NAV). +3.81% recovery today after worst June in 2026. F&G 19 (Extreme Fear) historically contrarian bullish. BTC dominance 55.84% stable. Crypto sleeve at 19.27% — at 20% neutral cap, cannot add. Hold; await regime improvement or sleeve room.",
       "invalidationLevel": "Weekly close below 52,000 USD (trend break)."
     },
     "ETH": {
-      "thesis": "Discounted L1 leader at $1,575.67 (below $1,667.47 avgCost; -5.51%, ~3.94% NAV). ETH recovering alongside BTC in Extreme Fear environment. Asymmetric upside when risk-on returns and crypto sleeve cap expands to 35%. Small position appropriate.",
+      "thesis": "Discounted L1 leader at $1,642.49 (below $1,667.47 avgCost; -1.50%, ~4.00% NAV). Up +4.09% today recovering with broader crypto. Near avg cost; asymmetric upside when risk-on returns and crypto sleeve cap expands to 35%. Small position appropriate.",
       "invalidationLevel": "Structural loss of share to L1 rivals; close below 1,300 USD."
     },
     "SOL": {
-      "thesis": "High-beta satellite at $71.33 (above $67.81 avgCost; +5.18%, ~1.25% NAV). Small position to capture upside when regime flips to risk-on and crypto sleeve cap expands. Overnight weakness modest (-0.61%). HOLD small position.",
+      "thesis": "High-beta satellite at $79.53 (above $67.81 avgCost; +17.28%, ~1.36% NAV). Up +5.59% today, outperforming peers. Small position capturing upside in crypto recovery. Crypto sleeve at 19.27% — no room to add. Hold small position for upside when regime flips to risk-on.",
       "invalidationLevel": "Break below 52 USD; network deterioration or sentiment collapse."
     }
   }
