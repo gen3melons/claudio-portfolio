@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-07-04T16:00:00Z",
-  "fx": { "EURUSD": 1.1420 },
+  "asOf": "2026-07-05T16:00:00Z",
+  "fx": { "EURUSD": 1.1442 },
   "marks": {
     "ticker:SPY":               744.78,
     "ticker:MSFT":              390.49,
@@ -14,10 +14,10 @@
     "ticker:SHY":                81.94,
     "ticker:AVGO":              360.45,
     "ticker:META":              582.90,
-    "coingecko:bitcoin":      62556.00,
-    "coingecko:ethereum":      1763.11,
-    "coingecko:solana":          81.38,
-    "coingecko:chainlink":        7.93,
-    "coingecko:ondo-finance":     0.332527
+    "coingecko:bitcoin":      62577.00,
+    "coingecko:ethereum":      1758.25,
+    "coingecko:solana":          80.37,
+    "coingecko:chainlink":        7.87,
+    "coingecko:ondo-finance":     0.325135
   }
 }
