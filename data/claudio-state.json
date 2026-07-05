@@ -1,43 +1,43 @@
 {
-  "lastUpdated": "2026-07-03T15:25:00Z",
+  "lastUpdated": "2026-07-04T16:00:00Z",
   "regime": "neutral",
-  "regimeNotes": "NEUTRAL regime maintained 2026-07-03, intraday re-check (Friday; NYSE/Nasdaq fully closed for Independence Day observed -- equity marks unchanged from July 2 close, confirmed via search). Crypto trades 24/7 and ticked up modestly since the morning read: BTC $62,056 (+0.7%), ETH $1,738.13 (+0.4%), SOL $81.57 (+0.8%); total mcap $2.24T (+1.12% 24h), BTC dominance 55.65% (stable), Fear & Greed still 21 (Extreme Fear, unchanged) -- no new information. Underlying macro picture from the morning read stands: soft June NFP (+57K vs ~110K consensus) cooled July hike odds to ~22%, DXY eased to ~100.8, gold extended its rally to ~$4,150 spot, Dow at records while Nasdaq/semis stayed soft and META and (-4.9%) session prior. Crypto sleeve now 19.66% of NAV (up slightly on crypto's move), still just under the 20% neutral cap -- no room to add. Cash 13.64% of NAV, above the 5% floor. NAV 99,004.69. REGIME UNCHANGED (neutral): with equities closed and crypto move immaterial, there is no new evidence to revisit any thesis or invalidation level. No invalidation levels breached. HOLD day, zero trades -- this is a same-day re-run of the review; no market-moving information has arrived since the morning pass.",
+  "regimeNotes": "NEUTRAL regime maintained 2026-07-04 (Saturday; US equity markets closed for the weekend -- SPY/MSFT/GOOGL/UNH/NVDA/GLD marks all unchanged from the July 2 close, confirmed via stockanalysis.com fallback since Stooq CSV endpoint was unreachable/404 today). Crypto trades 24/7 and ticked up modestly: BTC $62,556 (+0.8%), ETH $1,763.11 (+1.4%), SOL $81.38 (-0.2%); total crypto mcap $2.26T (+1.07% 24h), BTC dominance 55.60% (stable), Fear & Greed 22 Extreme Fear (vs 21 yesterday, essentially unchanged). Macro backdrop unchanged from the prior read: soft June NFP (+57K vs ~110K consensus) cooling near-term hike odds, DXY ~100.86, 10Y yield ~4.485%, gold holding its extended rally. No FOMC or data catalysts over the weekend. Crypto sleeve now 19.80% of NAV (drifted up slightly on crypto's weekend move), still just under the 20% neutral cap -- no room to add without breaching the guardrail. Cash 13.61% of NAV, comfortably above the 5% floor. MSFT sits at 14.99% of NAV, effectively at its 15% entry cap. NAV 99,173.59 (+0.17% vs July 3). REGIME UNCHANGED (neutral): with equities closed for the weekend and crypto's move immaterial, there is no new evidence to revisit any thesis or invalidation level. No invalidation levels breached; no guardrail breaches. HOLD day, zero trades.",
   "watchlist": ["BRK-B", "COST", "IBIT", "LINK", "ONDO", "SHY", "AVGO", "META"],
   "theses": {
     "SPY": {
-      "thesis": "Core US equity beta at $744.78 (above $741.75 avgCost; +0.41%, ~13.20% NAV). Dow at record highs, S&P resilient though flat today; broad index still the diversified anchor while breadth stays uneven under the surface (chip/megacap tech softness). Hold.",
+      "thesis": "Core US equity beta at $744.78 (above $741.75 avgCost; +0.41%, ~13.16% NAV). Markets closed for the weekend; mark unchanged from July 2 close. Broad index still the diversified anchor while breadth stays uneven under the surface (chip/megacap tech softness). Hold.",
       "invalidationLevel": "Sustained close below 660 USD or confirmed multi-hike path forcing a technical downtrend in the broad index."
     },
     "NVDA": {
-      "thesis": "AI/compute secular leader at $194.83 (below $208.44 avgCost; -6.53%, ~13.71% NAV). Down again with chip-sector softness (AVGO -2.4% same session) but AI capex cycle and data-center demand narrative intact; no rollover evidence yet. HOLD, monitor for further semis weakness.",
+      "thesis": "AI/compute secular leader at $194.83 (below $208.44 avgCost; -6.53%, ~13.67% NAV). Markets closed for the weekend; mark unchanged. Chip-sector softness (AVGO -2.4% Thursday) persists but AI capex cycle and data-center demand narrative intact; no rollover evidence yet. HOLD, monitor for further semis weakness.",
       "invalidationLevel": "AI capex digestion or data-center demand rollover; close below 150 USD."
     },
     "MSFT": {
-      "thesis": "Quality AI/cloud compounder at $390.49 (near 391.98 avgCost; -0.38%, ~15.04% NAV). At the 15% position cap -- no further adds. Azure + Copilot growth thesis unchanged. HOLD.",
+      "thesis": "Quality AI/cloud compounder at $390.49 (near 391.98 avgCost; -0.38%, ~14.99% NAV). Markets closed for the weekend; mark unchanged. At the 15% position cap -- no further adds. Azure + Copilot growth thesis unchanged. HOLD.",
       "invalidationLevel": "Cloud growth deceleration or AI capex without demonstrable ROI; close below 340 USD."
     },
     "GOOGL": {
-      "thesis": "Quality growth (search + cloud + AI) at $359.91 (below $366.53 avgCost; -1.81%, ~14.30% NAV). Search monopoly thesis intact; AI integration ongoing. HOLD, near cap.",
+      "thesis": "Quality growth (search + cloud + AI) at $359.91 (below $366.53 avgCost; -1.81%, ~14.26% NAV). Markets closed for the weekend; mark unchanged. Search monopoly thesis intact; AI integration ongoing. HOLD, near cap.",
       "invalidationLevel": "Search share erosion to AI rivals causing revenue decline; close below 310 USD."
     },
     "UNH": {
-      "thesis": "Defensive value at $425.36 (above $408.52 avgCost; +4.12%, ~6.32% NAV). Healthcare defensive ballast, small position acting as a natural hedge. HOLD.",
+      "thesis": "Defensive value at $425.36 (above $408.52 avgCost; +4.12%, ~6.30% NAV). Markets closed for the weekend; mark unchanged. Healthcare defensive ballast, small position acting as a natural hedge. HOLD.",
       "invalidationLevel": "Further regulatory or medical-cost shock; close below 360 USD."
     },
     "GLD": {
-      "thesis": "Tail/debasement hedge at $378.13 (below $386.54 avgCost; -2.18%, ~4.22% NAV). Gold ripped to ~$4,150 spot on the soft-jobs/dovish-repricing combo -- the hedge is doing its job, but the move is already extended over the past month so not adding here (chasing risk). HOLD.",
+      "thesis": "Tail/debasement hedge at $378.13 (below $386.54 avgCost; -2.18%, ~4.21% NAV). Markets closed for the weekend; mark unchanged. Gold's rally to ~$4,150 spot is already extended over the past month so not adding here (chasing risk). HOLD.",
       "invalidationLevel": "Real yields spike with strong USD reversal sustained; close below 350 USD."
     },
     "BTC": {
-      "thesis": "Core crypto sleeve leader at $62,056 (below $64,629 avgCost; -3.98%, ~14.06% NAV). Ticked up further intraday despite F&G still at 21 (Extreme Fear, 3+ weeks). BTC dominance 55.65% stable. Crypto sleeve at 19.66% -- essentially at the 20% neutral cap, cannot add. HOLD; await regime improvement or sleeve room.",
+      "thesis": "Core crypto sleeve leader at $62,556 (below $64,629 avgCost; -3.21%, ~14.15% NAV). Ticked up over the weekend (+0.8%) despite F&G still at 22 (Extreme Fear). BTC dominance 55.60% stable. Crypto sleeve at 19.80% -- essentially at the 20% neutral cap, cannot add. HOLD; await regime improvement or sleeve room.",
       "invalidationLevel": "Weekly close below 52,000 USD (trend break)."
     },
     "ETH": {
-      "thesis": "Discounted L1 leader at $1,738.13 (above 1,667.47 avgCost; +4.24%, ~4.21% NAV). Extending its move above average cost on continued crypto recovery. Asymmetric upside intact when risk-on returns and crypto cap expands to 35%. HOLD.",
+      "thesis": "Discounted L1 leader at $1,763.11 (above 1,667.47 avgCost; +5.75%, ~4.26% NAV). Extended its move over the weekend (+1.4%) on continued crypto recovery. Asymmetric upside intact when risk-on returns and crypto cap expands to 35%. HOLD.",
       "invalidationLevel": "Structural loss of share to L1 rivals; close below 1,300 USD."
     },
     "SOL": {
-      "thesis": "High-beta satellite at $81.57 (above 67.81 avgCost; +20.30%, ~1.39% NAV). Continuing to outperform peers in the crypto recovery. Crypto sleeve at cap -- no room to add. HOLD small position for further upside on regime flip.",
+      "thesis": "High-beta satellite at $81.38 (above 67.81 avgCost; +20.01%, ~1.38% NAV). Roughly flat over the weekend (-0.2%), still well above average cost from the crypto recovery. Crypto sleeve at cap -- no room to add. HOLD small position for further upside on regime flip.",
       "invalidationLevel": "Break below 52 USD; network deterioration or sentiment collapse."
     }
   }
