@@ -1,43 +1,43 @@
 {
-  "lastUpdated": "2026-07-05T16:00:00Z",
+  "lastUpdated": "2026-07-08T08:00:00Z",
   "regime": "neutral",
-  "regimeNotes": "NEUTRAL regime maintained 2026-07-05 (Sunday; US equity markets closed all weekend/holiday -- NYSE/Nasdaq were shut Friday July 3 for the observed Independence Day holiday since July 4 fell on a Saturday, then closed the weekend as usual; trading resumes Monday July 6. SPY/MSFT/GOOGL/UNH/NVDA/GLD marks carried forward unchanged from the July 2 close since there has been no trading session since -- confirmed via stockanalysis.com fallback since the Stooq CSV endpoint remained unreachable/404 again today). Crypto trades 24/7 and drifted marginally lower: BTC $62,577 (+0.03% vs yesterday), ETH $1,758.25 (-0.28%), SOL $80.37 (-1.24%); total crypto mcap ~$2.254T (+0.10% 24h), BTC dominance 55.70% (+0.10pt, still stable), Fear & Greed 23 Extreme Fear (vs 22 yesterday, essentially unchanged -- sentiment remains deeply fearful with no inflection). Macro backdrop unchanged from the prior read: soft June NFP (+57K vs ~110K consensus) with downward revisions to April/May continues to cool near-term hike odds, DXY ~100.88 (flat), 10Y yield ~4.48-4.49% (flat), no FOMC or scheduled data catalysts over the holiday weekend. Crypto sleeve now 19.78% of NAV (ticked down fractionally with the crypto softness), still just under the 20% neutral cap -- no room to add without breaching the guardrail. Cash 13.62% of NAV, comfortably above the 5% floor. MSFT sits at exactly 15.00% of NAV, at its position entry cap -- no further adds. NAV 99,149.63 (-0.024% vs July 4), essentially flat. REGIME UNCHANGED (neutral): with equities closed for the third consecutive non-trading day and crypto's move immaterial and non-directional, there is no new evidence to revisit any thesis or invalidation level. No invalidation levels breached; no guardrail breaches. HOLD day, zero trades.",
+  "regimeNotes": "NEUTRAL regime maintained 2026-07-08. Equities: SPY closed July 7 at $747.71 (S&P 500 index 7,503.85, -0.45% on the day) after a record-close July 6 (+0.72%, Dow 53,055.91) -- the pullback was driven by a chip-sector-specific rout (Samsung earnings disappointment plus reports China's DeepSeek is developing its own AI chip triggered a >4.5% drop in semiconductor names), not a broad macro deterioration; NVDA itself still closed +0.71% at $196.93, diverging from the broader chip selloff. Rates: 10Y yield rose to 4.50% (2-week high) as an LNG-carrier incident in the Strait of Hormuz pushed oil higher and revived inflation concern; September rate-hike odds rose to ~58% (from ~56%) -- a mildly hawkish/tightening signal, not a cut. DXY ~100.85, flat. Crypto: BTC $63,325 (+0.87% 24h), ETH $1,779.79 (+0.89%), SOL $81.41 (+1.62%); total crypto mcap ~$2.271T (+0.43% 24h), BTC dominance 55.80% (essentially flat). Fear & Greed 27 'Fear' (up from 23 'Extreme Fear' yesterday -- sentiment improving modestly but still fearful, no inflection to greed). NAV 99,837.25 (+0.69% vs July 5), a fifth straight up day for crypto-led gains. Crypto sleeve 19.88% of NAV -- essentially at the 20% neutral cap, no room to add. Cash 13.53% of NAV, comfortably above the 5% floor. No position exceeds the 15% entry cap (MSFT largest at 14.83%) and none breach the ~20% drift-trim trigger. No invalidation levels breached. Net read: equities near highs but showing sector-specific fragility in chips (watch AVGO/semis), rates ticking up on an oil-driven inflation scare (watch for follow-through), crypto grinding higher out of Fear -- mixed signals, insufficient evidence to flip risk-on (hike-odds increase argues against adding beta) or risk-off (index still near record, crypto still bid). REGIME UNCHANGED (neutral). HOLD day, zero trades -- crypto sleeve at cap, all stock positions reasonably sized, no watchlist name clears a compelling entry bar against a backdrop of rising rate-hike odds and chip-sector volatility.",
   "watchlist": ["BRK-B", "COST", "IBIT", "LINK", "ONDO", "SHY", "AVGO", "META"],
   "theses": {
     "SPY": {
-      "thesis": "Core US equity beta at $744.78 (above $741.75 avgCost; +0.41%, ~13.16% NAV). Markets closed Friday (July 4th observed holiday) through the weekend; mark unchanged from the July 2 close. Broad index still the diversified anchor while breadth stays uneven under the surface (chip/megacap tech softness). Hold.",
+      "thesis": "Core US equity beta at $747.71 (above $741.75 avgCost; +0.80%, ~13.13% NAV). Index pulled back 0.45% July 7 on a chip-sector-specific rout, not broad macro weakness; still near record levels reached July 6. Broad index remains the diversified anchor. Hold.",
       "invalidationLevel": "Sustained close below 660 USD or confirmed multi-hike path forcing a technical downtrend in the broad index."
     },
     "NVDA": {
-      "thesis": "AI/compute secular leader at $194.83 (below $208.44 avgCost; -6.53%, ~13.67% NAV). Markets closed since Thursday; mark unchanged. Chip-sector softness persists (AI valuation concerns) but AI capex cycle and data-center demand narrative intact; no rollover evidence yet. HOLD, monitor for further semis weakness when trading resumes Monday.",
+      "thesis": "AI/compute secular leader at $196.93 (below $208.44 avgCost; -5.52%, ~13.72% NAV). Closed +0.71% July 7 even as the broader semiconductor group sold off >4.5% on Samsung earnings and DeepSeek in-house-chip reports -- relative strength notable, but sector fragility bears watching (see AVGO on watchlist, down 0.83% same day). AI capex/data-center demand narrative intact. HOLD.",
       "invalidationLevel": "AI capex digestion or data-center demand rollover; close below 150 USD."
     },
     "MSFT": {
-      "thesis": "Quality AI/cloud compounder at $390.49 (near 391.98 avgCost; -0.38%, ~15.00% NAV). Markets closed since Thursday; mark unchanged. At the 15% position cap -- no further adds. Azure + Copilot growth thesis unchanged. HOLD.",
+      "thesis": "Quality AI/cloud compounder at $388.84 (below 391.98 avgCost; -0.80%, ~14.83% NAV). Near the 15% position cap -- no further adds. Azure + Copilot growth thesis unchanged, unaffected by the chip-sector-specific selloff. HOLD.",
       "invalidationLevel": "Cloud growth deceleration or AI capex without demonstrable ROI; close below 340 USD."
     },
     "GOOGL": {
-      "thesis": "Quality growth (search + cloud + AI) at $359.91 (below $366.53 avgCost; -1.81%, ~14.26% NAV). Markets closed since Thursday; mark unchanged. Search monopoly thesis intact; AI integration ongoing. HOLD, near cap.",
+      "thesis": "Quality growth (search + cloud + AI) at $367.03 (above $366.53 avgCost; +0.14%, ~14.44% NAV). Back above average cost. Search monopoly thesis intact; AI integration ongoing. HOLD, near cap.",
       "invalidationLevel": "Search share erosion to AI rivals causing revenue decline; close below 310 USD."
     },
     "UNH": {
-      "thesis": "Defensive value at $425.36 (above $408.52 avgCost; +4.12%, ~6.30% NAV). Markets closed since Thursday; mark unchanged. Healthcare defensive ballast, small position acting as a natural hedge. HOLD.",
+      "thesis": "Defensive value at $428.19 (above $408.52 avgCost; +4.82%, ~6.30% NAV). Up 2.44% July 7, outperforming the broad tape -- defensive/healthcare rotation as chip-sector volatility hit tech. Small position acting as a natural hedge. HOLD.",
       "invalidationLevel": "Further regulatory or medical-cost shock; close below 360 USD."
     },
     "GLD": {
-      "thesis": "Tail/debasement hedge at $378.13 (below $386.54 avgCost; -2.18%, ~4.21% NAV). Markets closed since Thursday; mark unchanged. Gold's rally is already extended over the past month so not adding here (chasing risk). HOLD.",
+      "thesis": "Tail/debasement hedge at $377.49 (below $386.54 avgCost; -2.34%, ~4.17% NAV). Down 1.21% July 7 as the 10Y yield rose to a 2-week high on the oil-driven inflation scare (higher real yields pressure gold near-term). Not adding here -- already extended over the past month. HOLD.",
       "invalidationLevel": "Real yields spike with strong USD reversal sustained; close below 350 USD."
     },
     "BTC": {
-      "thesis": "Core crypto sleeve leader at $62,577 (below $64,629 avgCost; -3.18%, ~14.16% NAV). Essentially flat over the weekend (+0.03%) despite F&G still deep in Extreme Fear (23). BTC dominance 55.70% stable. Crypto sleeve at 19.78% -- essentially at the 20% neutral cap, cannot add. HOLD; await regime improvement or sleeve room.",
+      "thesis": "Core crypto sleeve leader at $63,325 (below $64,629 avgCost; -1.98%, ~14.23% NAV). Up 0.87% 24h despite Fear & Greed still at 27 'Fear' -- sentiment improving off Sunday's Extreme Fear low but not yet euphoric. BTC dominance 55.80% stable. Crypto sleeve at 19.88% -- essentially at the 20% neutral cap, cannot add. HOLD; await regime improvement or sleeve room.",
       "invalidationLevel": "Weekly close below 52,000 USD (trend break)."
     },
     "ETH": {
-      "thesis": "Discounted L1 leader at $1,758.25 (above 1,667.47 avgCost; +5.44%, ~4.25% NAV). Ticked down slightly over the weekend (-0.28%) but remains well above average cost from the crypto recovery. Asymmetric upside intact when risk-on returns and crypto cap expands to 35%. HOLD.",
+      "thesis": "Discounted L1 leader at $1,779.79 (above 1,667.47 avgCost; +6.75%, ~4.28% NAV). Up 0.89% 24h, continuing to recover off recent lows. Asymmetric upside intact when risk-on returns and crypto cap expands to 35%. HOLD.",
       "invalidationLevel": "Structural loss of share to L1 rivals; close below 1,300 USD."
     },
     "SOL": {
-      "thesis": "High-beta satellite at $80.37 (above 67.81 avgCost; +18.53%, ~1.37% NAV). Down modestly over the weekend (-1.24%), still well above average cost from the crypto recovery. Crypto sleeve at cap -- no room to add. HOLD small position for further upside on regime flip.",
+      "thesis": "High-beta satellite at $81.41 (above 67.81 avgCost; +20.06%, ~1.37% NAV). Up 1.62% 24h, best 24h performer in the sleeve. Crypto sleeve at cap -- no room to add. HOLD small position for further upside on regime flip.",
       "invalidationLevel": "Break below 52 USD; network deterioration or sentiment collapse."
     }
   }
