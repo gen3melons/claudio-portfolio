@@ -202,5 +202,17 @@
     "value": 257.83,
     "regime": "neutral",
     "reasoning": "Trim SOL to bring crypto sleeve from 20.26 pct to 20.0 pct; neutral-regime hard cap is 20 pct; crypto gained while pre-market stock prices softened, causing sleeve drift above cap."
+  },
+  {
+    "id": "20260715-01",
+    "date": "2026-07-15T12:00:00Z",
+    "action": "SELL",
+    "assetClass": "crypto",
+    "symbol": "SOL",
+    "quantity": 2.6,
+    "price": 77.6,
+    "value": 201.76,
+    "regime": "neutral",
+    "reasoning": "BTC/ETH gains drifted crypto sleeve to 20.18 pct NAV, above the 20 pct neutral cap; trim smallest-conviction satellite (SOL) back under cap amid crypto Extreme Fear (25) and a hawkish Fed/Hormuz-blockade oil shock raising macro risk."
   }
 ]

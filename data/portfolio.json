@@ -1,12 +1,12 @@
 {
   "baseCurrency": "USD",
-  "cash": 13502.05,
+  "cash": 13703.81,
   "startingCapital": 100000,
   "goal": 500000,
   "inceptionDate": "2026-06-14",
   "monthlyContributionUSD": 0,
   "manager": "Claudio",
-  "lastReview": "2026-07-08",
+  "lastReview": "2026-07-15",
   "holdings": [
     {
       "assetClass": "stock",
@@ -69,7 +69,7 @@
       "symbol": "SOL",
       "name": "Solana",
       "priceSource": "coingecko:solana",
-      "quantity": 16.842,
+      "quantity": 14.242,
       "avgCost": 67.81
     },
     {
