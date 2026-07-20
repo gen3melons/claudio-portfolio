@@ -214,5 +214,17 @@
     "value": 201.76,
     "regime": "neutral",
     "reasoning": "BTC/ETH gains drifted crypto sleeve to 20.18 pct NAV, above the 20 pct neutral cap; trim smallest-conviction satellite (SOL) back under cap amid crypto Extreme Fear (25) and a hawkish Fed/Hormuz-blockade oil shock raising macro risk."
+  },
+  {
+    "id": "20260720-01",
+    "date": "2026-07-20T12:00:00Z",
+    "action": "SELL",
+    "assetClass": "crypto",
+    "symbol": "SOL",
+    "quantity": 3,
+    "price": 76.41,
+    "value": 229.23,
+    "regime": "neutral",
+    "reasoning": "Crypto sleeve drifted to ~20.03 pct NAV, at the 20 pct neutral cap; trim smallest-conviction satellite (SOL) back to ~19.8 pct for buffer, with VIX rising toward 18.8 and the Hormuz blockade/oil risk still unresolved."
   }
 ]
