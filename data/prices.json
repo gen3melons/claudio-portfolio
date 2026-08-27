@@ -1,23 +1,25 @@
 {
-  "asOf": "2026-07-20T12:00:00Z",
-  "fx": { "EURUSD": 1.1437 },
+  "asOf": "2026-08-27",
+  "fx": {
+    "EURUSD": 1.1669
+  },
   "marks": {
-    "ticker:SPY":               746.27,
-    "ticker:MSFT":              391.00,
-    "ticker:GOOGL":             347.74,
-    "ticker:UNH":               426.09,
-    "ticker:GLD":               369.16,
-    "ticker:NVDA":              205.24,
-    "ticker:BRK-B":             497.33,
-    "ticker:COST":              940.87,
-    "ticker:IBIT":               36.48,
-    "ticker:SHY":                81.99,
-    "ticker:AVGO":              375.00,
-    "ticker:META":              644.00,
-    "coingecko:bitcoin":      64355.00,
-    "coingecko:ethereum":      1873.71,
-    "coingecko:solana":          76.41,
-    "coingecko:chainlink":        8.40,
-    "coingecko:ondo-finance":     0.348869
+    "ticker:SPY": 766.08,
+    "ticker:MSFT": 496.37,
+    "ticker:GOOGL": 342.00,
+    "ticker:UNH": 401.01,
+    "ticker:GLD": 421.32,
+    "ticker:NVDA": 223.46,
+    "coingecko:bitcoin": 79434,
+    "coingecko:ethereum": 2505.46,
+    "coingecko:solana": 104.79,
+    "ticker:BRK-B": 504.91,
+    "ticker:COST": 956.12,
+    "ticker:AVGO": 355.59,
+    "ticker:META": 576.14,
+    "ticker:IBIT": 44.46,
+    "ticker:SHY": 82.05,
+    "coingecko:chainlink": 11.81,
+    "coingecko:ondo-finance": 0.376313
   }
 }
