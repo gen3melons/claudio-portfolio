@@ -226,5 +226,29 @@
     "value": 229.23,
     "regime": "neutral",
     "reasoning": "Crypto sleeve drifted to ~20.03 pct NAV, at the 20 pct neutral cap; trim smallest-conviction satellite (SOL) back to ~19.8 pct for buffer, with VIX rising toward 18.8 and the Hormuz blockade/oil risk still unresolved."
+  },
+  {
+    "id": "20260901-01",
+    "date": "2026-09-01T00:20:00Z",
+    "action": "SELL",
+    "assetClass": "crypto",
+    "symbol": "SOL",
+    "quantity": 11.242,
+    "price": 102.77,
+    "value": 1155.34,
+    "regime": "neutral",
+    "reasoning": "Regime downgraded risk-on -> neutral (Warsh Fed turned hawkish, Sept hike ~48 pct odds, inflation 3-yr high on energy); neutral crypto cap is 20 pct so exit the smallest-conviction high-beta satellite fully to bring the 22.3 pct sleeve back toward cap."
+  },
+  {
+    "id": "20260901-02",
+    "date": "2026-09-01T00:20:00Z",
+    "action": "SELL",
+    "assetClass": "crypto",
+    "symbol": "ETH",
+    "quantity": 0.5592,
+    "price": 2438.99,
+    "value": 1363.88,
+    "regime": "neutral",
+    "reasoning": "Take partial profit into strength (ETH +46 pct vs avgCost) to finish trimming the crypto sleeve from 22.3 pct to the 20 pct neutral-regime cap after the Fed turned hawkish; BTC core left intact."
   }
 ]

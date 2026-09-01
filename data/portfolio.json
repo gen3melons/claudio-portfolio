@@ -1,12 +1,12 @@
 {
   "baseCurrency": "USD",
-  "cash": 13933.04,
+  "cash": 16452.26,
   "startingCapital": 100000,
   "goal": 500000,
   "inceptionDate": "2026-06-14",
   "monthlyContributionUSD": 0,
   "manager": "Claudio",
-  "lastReview": "2026-08-27",
+  "lastReview": "2026-09-01",
   "holdings": [
     {
       "assetClass": "stock",
@@ -61,16 +61,8 @@
       "symbol": "ETH",
       "name": "Ethereum",
       "priceSource": "coingecko:ethereum",
-      "quantity": 2.398846,
+      "quantity": 1.839646,
       "avgCost": 1667.47
-    },
-    {
-      "assetClass": "crypto",
-      "symbol": "SOL",
-      "name": "Solana",
-      "priceSource": "coingecko:solana",
-      "quantity": 11.242,
-      "avgCost": 67.81
     },
     {
       "assetClass": "stock",

@@ -1,44 +1,40 @@
 {
-  "lastUpdated": "2026-08-27T12:00:00Z",
-  "regime": "risk-on",
-  "regimeNotes": "REGIME UPGRADED neutral -> RISK-ON on 2026-08-27 (first review since 2026-07-20; a 5-week gap). Driver: a decisive dovish Fed pivot. At Jackson Hole, Powell opened the door to a September cut, prioritizing rising labor-market downside risk over inflation; CME odds of a Sept cut ~80-90 pct, with markets pricing 100-125 bp of cuts through year-end (fed funds toward ~4.25 pct). Rates: 10Y yield fell to ~4.22-4.24 pct (from ~4.55 pct in July). USD: DXY soft, below its 200DMA. Equities: SPY at record highs 766.08 (from 746 in July); MSFT ripped to 496.37 (+26.6 pct vs avgCost) on AI/cloud strength; NVDA reported a blowout Q2 (revenue 96.2B, +106 pct YoY, beat by ~4B; Q3 guide ~108B; Vera Rubin shipping) and trades ~223 post-earnings -- the AI-capex cycle is confirmed, not digesting. Crypto: total mcap ~2.69T (from 2.28T), BTC 79,434 (+23 pct since last review), ETH 2,505 (+34 pct), SOL 104.79; Fear & Greed 71 'Greed' (from 29 'Fear'); BTC dominance rose to ~59 pct (mild flight-to-quality within crypto). Principal offset / caution flag: the US naval blockade of the Strait of Hormuz remains UNRESOLVED into its ~6th month; the June 17 MoU collapsed, WTI ~82 and Brent near 90, Hormuz crude flows ~4.9 mbpd vs ~21.6 mbpd pre-conflict -- a persistent inflation/energy tail risk that could force the Fed to reverse. Net: the dominant forces (Fed easing into record equity highs + confirmed AI earnings strength + crypto uptrend) outweigh the oil risk -> RISK-ON, but measured: keep a full cash buffer as optionality against the Hormuz tail. NAV 110,791.61 USD, +10.83 pct vs July 20's 99,965.18 and +10.79 pct since 100k inception -- ahead of the ~33 pct CAGR pace. Portfolio actions today: NONE. The regime upgrade lifts the crypto sleeve cap from 20 pct to 35 pct, so the sleeve at 22.6 pct of NAV (drifted up on the crypto rally) needs NO trim -- the guardrail is satisfied without a trade. MSFT is the largest position at 17.06 pct NAV (drifted above the 15 pct entry cap on the rally but below the ~20 pct drift-trim trigger -- hold, no add); BTC 16.08 pct similarly. Cash 12.58 pct, well above the 5 pct floor. No invalidation level is close to breached. With equities at record highs and crypto in 'Greed', there is no discounted entry to chase -- adding here would be buying strength, not edge. HOLD day, zero trades.",
+  "lastUpdated": "2026-09-01T00:20:00Z",
+  "regime": "neutral",
+  "regimeNotes": "REGIME DOWNGRADED risk-on -> NEUTRAL on 2026-09-01 (5 days after the 2026-08-27 risk-on upgrade). The single pillar of that upgrade -- a 'decisive dovish Fed pivot' -- has REVERSED. Fed Chair Kevin Warsh gave a hawkish speech flagging inflation worries; prediction markets (Kalshi) now price ~48 pct odds of a 25 bp HIKE in September, versus ~70 pct odds of no-change a week earlier. US CPI is at a 3-year high, pushed up by energy from the unresolved Middle East / Strait of Hormuz conflict (Brent near 90, WTI ~82; EIA sees Mideast output depressed until early 2027). Rates: 10Y steady ~4.22-4.24 pct but the policy path has flipped from easing to hike-risk. Equities: SPY 767.05 (~flat vs 766 on 8/27), S&P 500 ~7,686, but stalled at highs with a down Friday (Dow -0.7 pct) -- toppy, not broken. Mega-cap mixed since 8/27: MSFT 496 -> 507, NVDA 223 -> 220.78, GOOGL 342 -> 339.35. Crypto rolled over: total mcap 2.69T -> 2.625T, BTC 79,434 -> 78,199 (-1.6 pct), ETH 2,505 -> 2,439 (-2.6 pct), SOL 104.79 -> 102.77; Fear & Greed 71 -> 62 (still 'Greed'); BTC dominance ~59.7 pct (elevated = defensive tilt within crypto). Not risk-off: no growth scare, no credit stress, equities near record highs, VIX not spiking. But the risk asymmetry has clearly worsened -> NEUTRAL with a cautious lean. NAV 110,161.84 USD, -0.57 pct vs 8/27's 110,791.61, still +10.16 pct since inception and ahead of the ~33 pct CAGR pace. Portfolio action today: the neutral regime lowers the crypto sleeve cap from 35 pct back to 20 pct; the sleeve sat at 22.3 pct of NAV, so 2 guardrail-driven trims -- SOLD all SOL (11.242 @ 102.77, 1155.34 USD) and SOLD 0.5592 ETH (@ 2438.99, 1363.88 USD, taking profit into a +46 pct gain) -- bring the sleeve exactly to the 20 pct cap. BTC core left untouched. Cash rises 12.6 pct -> 14.9 pct, welcome optionality against a hawkish Fed + oil tail. MSFT remains the largest position at 17.5 pct NAV (above the 15 pct entry cap, below the ~20 pct drift-trim trigger -- HOLD, no add); BTC 15.9 pct similarly. No equity invalidation level is near. Equity book (quality AI/cloud + defensive UNH + GLD hedge) held intact -- these are durable compounders and the GLD/UNH ballast is exactly right for a stagflation-lean tape.",
   "watchlist": ["BRK-B", "COST", "AVGO", "META", "IBIT", "LINK", "ONDO"],
   "theses": {
     "SPY": {
-      "thesis": "Core US equity beta at 766.08 (+3.28 pct vs 741.75 avgCost; ~12.1 pct NAV). Record highs, powered by a dovish Fed pivot (Sept cut ~85 pct priced) and confirmed AI earnings strength. Broad-index diversified anchor. HOLD; no add at record highs with an unresolved oil tail risk.",
-      "invalidationLevel": "Sustained close below 660 USD, or the Fed forced to reverse to hikes on an oil-driven inflation re-acceleration."
+      "thesis": "Core US equity beta at 767.05 (+3.4 pct vs 741.75 avgCost; ~12.2 pct NAV). Record highs but stalling as the Fed turns hawkish (Sept hike ~48 pct odds) and energy-driven inflation runs at a 3-yr high. Broad diversified anchor; HOLD, no add into a toppy tape with a live hike risk.",
+      "invalidationLevel": "Sustained close below 660 USD, or a disorderly rate-driven selloff on a confirmed Fed hiking cycle."
     },
     "NVDA": {
-      "thesis": "AI/compute secular leader at ~223.46 (+7.2 pct vs 208.44 avgCost; ~14.0 pct NAV). Q2 2026 blowout: revenue 96.2B (+106 pct YoY), Q3 guide ~108B, Vera Rubin shipping with hyperscaler POs. Data-center demand thesis firmly intact. Near the 15 pct cap -- HOLD, no add.",
+      "thesis": "AI/compute secular leader at 220.78 (+5.9 pct vs 208.44 avgCost; ~13.9 pct NAV). Q2 2026 blowout intact (revenue 96.2B, +106 pct YoY; Q3 guide ~108B; Vera Rubin shipping). Slight drift down since 8/27 on the broad risk-off wobble, thesis unbroken. Near the 15 pct cap -- HOLD, no add.",
       "invalidationLevel": "AI capex digestion or data-center demand rollover; close below 150 USD."
     },
     "MSFT": {
-      "thesis": "Quality AI/cloud compounder at 496.37 (+26.6 pct vs 391.98 avgCost; ~17.1 pct NAV -- drifted above the 15 pct entry cap on the rally, below the ~20 pct trim trigger). Azure + Copilot growth compounding. HOLD; no add; trim toward 15 pct only if it exceeds ~20 pct NAV.",
-      "invalidationLevel": "Cloud growth deceleration or AI capex without demonstrable ROI; close below 360 USD."
+      "thesis": "Quality AI/cloud compounder at 507.29 (+29.4 pct vs 391.98 avgCost; ~17.5 pct NAV -- above the 15 pct entry cap on the rally, below the ~20 pct trim trigger). Azure + Copilot compounding. HOLD; no add; trim toward 15 pct only if it exceeds ~20 pct NAV.",
+      "invalidationLevel": "Cloud growth deceleration or AI capex without demonstrable ROI; close below 380 USD."
     },
     "GOOGL": {
-      "thesis": "Quality growth (search + cloud + AI) at 342.00 (-6.7 pct vs 366.53 avgCost; ~12.1 pct NAV). The book laggard; search-monopoly + cloud thesis intact, weakness is relative underperformance vs mega-cap peers, not thesis-breaking. HOLD.",
+      "thesis": "Quality growth (search + cloud + AI) at 339.35 (-7.4 pct vs 366.53 avgCost; ~12.1 pct NAV). The book laggard; search + cloud thesis intact, weakness is relative underperformance not a broken thesis. HOLD.",
       "invalidationLevel": "Search share erosion to AI rivals causing revenue decline; close below 310 USD."
     },
     "UNH": {
-      "thesis": "Defensive value at 401.01 (-1.8 pct vs 408.52 avgCost; ~5.3 pct NAV). Near flat; retained as a low-beta ballast and natural hedge against the unresolved Hormuz/oil tail even in a risk-on tape. HOLD.",
+      "thesis": "Defensive value at 389.41 (-4.7 pct vs 408.52 avgCost; ~5.2 pct NAV). Low-beta ballast and a natural hedge for a stagflation-lean, hawkish-Fed backdrop. HOLD.",
       "invalidationLevel": "Further regulatory or medical-cost shock; close below 360 USD."
     },
     "GLD": {
-      "thesis": "Tail/debasement hedge at 421.32 (+9.0 pct vs 386.54 avgCost; ~4.2 pct NAV). Working: falling real yields (Fed easing) + a weak DXY + live geopolitical oil risk are a triple tailwind. Small sleeve; HOLD as insurance -- do not cut a hedge that is performing while the Hormuz risk is unresolved.",
-      "invalidationLevel": "Real yields spike with a sustained strong-USD reversal; close below 350 USD."
+      "thesis": "Tail / inflation / debasement hedge at 408.42 (+5.7 pct vs 386.54 avgCost; ~4.1 pct NAV). Working as designed: 3-yr-high inflation + unresolved Hormuz oil risk keep a bid under gold even with real-yield risk from a possible Fed hike. Small sleeve; HOLD as insurance.",
+      "invalidationLevel": "Real yields spike hard with a sustained strong-USD reversal and cooling inflation; close below 350 USD."
     },
     "BTC": {
-      "thesis": "Core crypto sleeve leader at 79,434 (+22.9 pct vs 64,629 avgCost; ~16.1 pct NAV -- drifted above the 15 pct entry cap on the rally, below ~20 pct trim). Uptrend confirmed, dominance ~59 pct, but Fear & Greed 71 'Greed' = not a discount. HOLD; no add into greed.",
+      "thesis": "Core crypto sleeve leader at 78,199 (+21.0 pct vs 64,629 avgCost; ~15.9 pct NAV -- above the 15 pct entry cap, below ~20 pct trim). Uptrend intact, dominance ~59.7 pct, but Fear & Greed 62 'Greed' and a hawkish Fed cap upside. HOLD; core position kept through the sleeve trim.",
       "invalidationLevel": "Weekly close below 52,000 USD (trend break)."
     },
     "ETH": {
-      "thesis": "Discounted L1 leader at 2,505.46 (+50.3 pct vs 1,667.47 avgCost; ~5.4 pct NAV). Big move off the lows; asymmetric upside partly realized. Risk-on regime + 35 pct sleeve cap leaves room, but adding after a +34 pct run since last review is chasing. HOLD.",
+      "thesis": "L1 leader at 2,438.99 (+46.3 pct vs 1,667.47 avgCost; ~4.1 pct NAV after a partial-profit trim on 2026-09-01). Big move off the lows largely realized; trimmed 0.5592 to hold the 20 pct neutral crypto cap. HOLD remainder.",
       "invalidationLevel": "Structural loss of share to L1 rivals; close below 1,300 USD."
-    },
-    "SOL": {
-      "thesis": "High-beta satellite at 104.79 (+54.5 pct vs 67.81 avgCost; ~1.1 pct NAV). Best percentage performer; small residual position after prior cap-driven trims. HOLD remainder for continued risk-on upside; smallest-conviction sleeve name, first to trim on any future cap breach.",
-      "invalidationLevel": "Break below 52 USD; network deterioration or sentiment collapse."
     }
   }
 }
